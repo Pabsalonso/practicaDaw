@@ -1,10 +1,78 @@
+.pageWrapper{
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
 /*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 20-oct-2020, 18:10:27
-    Author     : Pablo Alonso
-*/
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}*/
 
+.siteHeader{
+    width: 100%;
+    max-width: 100%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    border: solid black;
+}
+
+.siteHeader h1{
+    max-width:70%;
+    font-size: 5vw;
+    float:left;
+    margin-left: 10%;
+    background-color: #dddddd; 
+}
+
+.siteHeader img{
+    margin-left:20%;
+    margin-top:10px;
+    margin-bottom: 10px;
+    width: 20%;
+    max-width: 100%;
+    height: auto;
+}
+
+.topNav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    background-color: #dddddd;
+}
+
+.topNav li{
+    float:left;
+    border-right: 1px solid #bbb;
+}
+
+.topNav a{
+    display: block;
+    padding: 14px;
+    text-align: center;
+}
+
+.topNav .rightLink{
+    float: right;
+}
+
+/*Diseño para dispositivos moviles, la navegacion cambia a ser una por linea*/
+@media screen and (max-width: 800px) {
+    .topNav li{
+        width: 100%;
+    }
+}
+
+
+.mainPageSection{
+    clear:both;
+}
