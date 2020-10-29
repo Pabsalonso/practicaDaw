@@ -1,17 +1,13 @@
 .pageWrapper{
-    padding: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+    height:100%;
+    padding-top: 10px;
     margin-left: auto;
     margin-right: auto;
 }
-/*
-.clearfix:after {
-    visibility: hidden;
-    display: block;
-    font-size: 0;
-    content: " ";
-    clear: both;
-    height: 0;
-}*/
+
+/*Clases relacionadas con el header*/
 
 .siteHeader{
     width: 100%;
@@ -29,7 +25,6 @@
     font-size: 5vw;
     float:left;
     margin-left: 10%;
-    background-color: #dddddd; 
 }
 
 .siteHeader img{
@@ -41,38 +36,147 @@
     height: auto;
 }
 
+/*clases de la navegacion*/ 
+
 .topNav{
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     width: 100%;
+    border: solid black;
     background-color: #dddddd;
 }
 
 .topNav li{
+    min-width: 10%;
+    min-height: 10px;
     float:left;
     border-right: 1px solid #bbb;
 }
 
+.topNav .rightLink{
+    float: right;
+    border-right: none;
+    border-left: 1px solid #bbb;
+}
+
 .topNav a{
     display: block;
+    font-size: 1.5vw;
     padding: 14px;
     text-align: center;
 }
 
-.topNav .rightLink{
-    float: right;
+.mainPageSection{
+    overflow: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    clear:both;
+    padding-bottom: 50px;
+}
+
+.mainPageSection h2{
+    min-width: 100%;
+    font-size: 3vw;
+    text-align: center;
+}
+
+.articulosPrincipales{
+    margin-left: 5%;
+    margin-top: 20px;
+    max-width: 40%;
+    border: solid black;
+    border-radius: 25px;
+    padding: 20px; 
+    float:left;
+    
+}
+
+
+.articulosPrincipalesDer{
+    margin-right:5%;
+    margin-top: 20px;
+    max-width: 40%;
+    border: solid black;
+    border-radius: 25px;
+    padding: 20px; 
+    float:right;
+    
+}
+
+footer{
+    position: absolute;
+    bottom:auto;
+    left: 0;
+    height: 10%;
+    background-color: red; 
+    width: 100%;
+    text-align: center;
+    border-top:solid black;
+    clear:both;
+}
+
+.infoCuenta{
+    float: left;
+    width:65%;
+    height: 65%;
+    margin-left:5%;
+    padding-left:5px;
+    padding-right: 5px;
+    border: solid 1px black;
+    background-color: green;
+}
+
+.infoCuenta h3{
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.sideNav{
+    background-color: grey;
+    float:left;
+    border: solid black;
+    width: 25%;
+}
+
+.sideNav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sideNav li{
+    min-height: 2em;
+    border-bottom: solid #bbb;
+}
+
+.sideNav li:last-of-type{
+    border-bottom: none;
+}
+
+.sideNav a{
+    display: block;
+    font-size: 1.5vw;
+    padding: 14px;
+    text-align: center;
 }
 
 /*Diseño para dispositivos moviles, la navegacion cambia a ser una por linea*/
 @media screen and (max-width: 800px) {
     .topNav li{
         width: 100%;
+        border-bottom: solid black;
     }
-}
-
-
-.mainPageSection{
-    clear:both;
+    
+    .topNav li:last-child{
+        width: 100%;
+        border-bottom: none;
+    }
+    
+    .topNav a {
+        font-size:2vw;        
+    }
 }
