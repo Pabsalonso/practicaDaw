@@ -1,9 +1,5 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+
 <html>
     <head>
         <title>Carta</title>
@@ -12,52 +8,228 @@ and open the template in the editor.
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        
         <div class= "pageWrapper" >
+            
             <!-- Header -->
             <header class="siteHeader">
-                <img src="./imgs/pizza.jpg" alt="logo"/>
+                <a href="home.html"><img src="./images/logo.jpg" alt="logo"/></a>
                 <h1 id="nameSite">La casa de la πzza</h1>
             </header>
             
             <!-- nav -->
             <nav>
                 <ul class="topNav">
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="carta.html">Carta</a></li>
-                    <li><a href="menus-Ofertas.html">Menus y Ofertas</a></li>
-                    <li class="rightLink"><a href="carrito.html">Carrito</a></li>
-                    <li class="rightLink"><a href="inicioSesion.html">Iniciar Sesion</a></li>
-                    <li class="rightLink"><a href="miPerfil.html">Mi Perfil</a></li>
+                    <li class="rightLink"><a href="cesta.html">Cesta</a></li>
+                    <li class="rightLink"><a href="inicioSesion.html">Iniciar Sesión</a></li>
                 </ul>
             </nav>
             
             <!-- Contenido. Carta: cuerpo con los distintos productos de la carta -->
-            <main class="mainPageSection">
+            <main class="carta-mainPageSection">
                 <h2>Nuestra carta</h2>
-                <article class="productosRecomendados">
+                
+                <!-- Caja con los productos de la carta. Sección: Productos recomendados -->
+                <article class="productosCarta">
+                    
                     <h3>Productos Recomendados</h3>
+                    
+                    <div class="productWrapper">
+                        <div class="boxProduct">
+                            <h4>Producto</h4>
+                            <img src="./images/carta/recommended.jpg" alt="Producto recomendado ejemplo"/>
+                            <p><a href="">Añadir a la cesta</a></p>
+                        </div>
+                        
+                       <div class="boxProduct">
+                            <h4>Producto</h4>
+                            <img src="./images/carta/recommended.jpg" alt="Producto recomendado ejemplo"/>
+                            <p><a href="">Añadir a la cesta</a></p>
+                        </div>
+                        
+                        <div class="boxProduct">
+                            <h4>Producto</h4>
+                            <img src="./images/carta/recommended.jpg" alt="Producto recomendado ejemplo"/>
+                            <p><a href="">Añadir a la cesta</a></p>
+                        </div>
+                        
+                        <div class="boxProduct">
+                            <h4>Producto</h4>
+                            <img src="./images/carta/recommended.jpg" alt="Producto recomendado ejemplo"/>
+                            <p><a href="">Añadir a la cesta</a>
+                        </div>
+                        
+                        <a href=""><img src="./images/icons/next.png" alt="Next product" width="40" height="40"></a>
+                    </div>
                 </article>
 
-                <article class="pizzas">
-                    <h3>Pizzas</h3>
+                <!-- Caja con los productos de la carta. Sección: Pizzas -->
+                <article class="productosCarta">
+                    
+                    <h3>Nuestras Pizzas</h3>
+                    
+                    <div class="productWrapper">
+                        <div class="boxProduct">
+                            <h4>Pizza</h4>
+                            <img src="./images/carta/pizza.jpg" alt="Pizza ejemplo" height="180"/>
+                            <p><a href="">Añadir a la cesta</a></p>
+                        </div>
+                        
+                       <div class="boxProduct">
+                            <h4>Pizza</h4>
+                            <img src="./images/carta/pizza.jpg" alt="Pizza ejemplo" height="180"/>
+                            <p><a href="">Añadir a la cesta</a></p>
+                        </div>
+                        
+                        <div class="boxProduct">
+                            <h4>Pizza</h4>
+                            <img src="./images/carta/pizza.jpg" alt="Pizza ejemplo" height="180"/>
+                            <p><a href="">Añadir a la cesta</a></p>
+                        </div>
+                        
+                        <div class="boxProduct">
+                            <h4>Pizza</h4>
+                            <img src="./images/carta/pizza.jpg" alt="Pizza ejemplo" height="180"/>
+                            <p><a href="">Añadir a la cesta</a>
+                        </div>
+                        
+                        <a href=""><img src="./images/icons/next.png" alt="Next product" width="40" height="40"></a>
+                    </div>
                 </article>
 
-                <article class="hamburguesas">
+                <!-- Caja con los productos de la carta. Sección: Hamburguesas -->
+                <article class="productosCarta">
+                    
                     <h3>Hamburguesas</h3>
+                    
+                    <div class="productWrapper">
+                        <div class="boxProduct">
+                            <h4>Producto</h4>
+                            <img src="./images/carta/hamburguesa.webp" alt="Hamburguesa ejemplo" height="180"/>
+                            <p><a href="">Añadir a la cesta</a></p>
+                        </div>
+                        
+                       <div class="boxProduct">
+                            <h4>Producto</h4>
+                            <img src="./images/carta/hamburguesa.webp" alt="Hamburguesa ejemplo" height="180"/>
+                            <p><a href="">Añadir a la cesta</a></p>
+                        </div>
+                        
+                        <div class="boxProduct">
+                            <h4>Producto</h4>
+                            <img src="./images/carta/hamburguesa.webp" alt="Hamburguesa ejemplo" height="180"/>
+                            <p><a href="">Añadir a la cesta</a></p>
+                        </div>
+                        
+                        <div class="boxProduct">
+                            <h4>Producto</h4>
+                            <img src="./images/carta/hamburguesa.webp" alt="Hamburguesa ejemplo" height="180"/>
+                            <p><a href="">Añadir a la cesta</a>
+                        </div>
+                        
+                        <a href=""><img src="./images/icons/next.png" alt="Next product" width="40" height="40"></a>
+                    </div>
                 </article>
 
-                <article class="bebidas">
-                    <h3>Snacks</h3>
+                <!-- Caja con los productos de la carta. Sección: Postres -->
+                <article class="productosCarta">
+                    
+                    <h3>Postres</h3>
+                    
+                    <div class="productWrapper">
+                        <div class="boxProduct">
+                            <h4>Producto</h4>
+                            <img src="./images/carta/postre.jpg" alt="Postre ejemplo"/>
+                            <p><a href="">Añadir a la cesta</a></p>
+                        </div>
+                        
+                       <div class="boxProduct">
+                            <h4>Producto</h4>
+                            <img src="./images/carta/postre.jpg" alt="Postre ejemplo" height="180"/>
+                            <p><a href="">Añadir a la cesta</a></p>
+                        </div>
+                        
+                        <div class="boxProduct">
+                            <h4>Producto</h4>
+                            <img src="./images/carta/postre.jpg" alt="Postre ejemplo" height="180"/>
+                            <p><a href="">Añadir a la cesta</a></p>
+                        </div>
+                        
+                        <div class="boxProduct">
+                            <h4>Producto</h4>
+                            <img src="./images/carta/postre.jpg" alt="Postre ejemplo" height="180"/>
+                            <p><a href="">Añadir a la cesta</a>
+                        </div>
+                        
+                        <a href=""><img src="./images/icons/next.png" alt="Next product" width="40" height="40"></a>
+                    </div>
                 </article>
                 
-                <article class="snacks">
-                    <h3>Snacks</h3>
+                <!-- Caja con los productos de la carta. Sección: Bebidas -->
+                <article class="productosCarta">
+                    <h3>Bebidas</h3>
+                    <div class="productWrapper">
+                        <div class="boxProduct">
+                            <h4>Producto</h4>
+                            <img src="./images/carta/bebida.jpg" alt="Bebida ejemplo" height="180"/>
+                            <p><a href="">Añadir a la cesta</a></p>
+                        </div>
+                        
+                       <div class="boxProduct">
+                            <h4>Producto</h4>
+                            <img src="./images/carta/bebida.jpg" alt="Bebida ejemplo" height="180"/>
+                            <p><a href="">Añadir a la cesta</a></p>
+                        </div>
+                        
+                        <div class="boxProduct">
+                            <h4>Producto</h4>
+                            <img src="./images/carta/bebida.jpg" alt="Bebida ejemplo" height="180"/>
+                            <p><a href="">Añadir a la cesta</a></p>
+                        </div>
+                        
+                        <div class="boxProduct">
+                            <h4>Producto</h4>
+                            <img src="./images/carta/bebida.jpg" alt="Bebida ejemplo" height="180"/>
+                            <p><a href="">Añadir a la cesta</a>
+                        </div>
+                        
+                        <a href=""><img src="./images/icons/next.png" alt="Next product" width="40" height="40"></a>
+                    </div>
                 </article>
                 
-                <article class="otros">
+                 <!-- Caja con los productos de la carta. Sección: Otros -->
+                <article class="productosCarta">
+                    
                     <h3>Otros productos</h3>
+                    
+                    <div class="productWrapper">
+                        <div class="boxProduct">
+                            <h4>Producto</h4>
+                            <img src="./images/carta/otro.jpg" alt="Otros productos ejemplo" height="180"/>
+                            <p><a href="">Añadir a la cesta</a></p>
+                        </div>
+                        
+                       <div class="boxProduct">
+                            <h4>Producto</h4>
+                            <img src="./images/carta/otro.jpg" alt="Otros productos ejemplo" height="180"/>
+                            <p><a href="">Añadir a la cesta</a></p>
+                        </div>
+                        
+                        <div class="boxProduct">
+                            <h4>Producto</h4>
+                            <img src="./images/carta/otro.jpg" alt="Otros productos ejemplo" height="180"/>
+                            <p><a href="">Añadir a la cesta</a></p>
+                        </div>
+                        
+                        <div class="boxProduct">
+                            <h4>Producto</h4>
+                            <img src="./images/carta/otro.jpg" alt="Otros productos ejemplo" height="180"/>
+                            <p><a href="">Añadir a la cesta</a>
+                        </div>
+                        
+                        <a href=""><img src="./images/icons/next.png" alt="Next product" width="40" height="40"></a>
+                    </div>
                 </article>
+                 
             </main>
             <footer>
                 <p>Grupo DAW 2020</p>
