@@ -69,6 +69,7 @@
 }
 
 .mainPageSection{
+    position: relative;
     overflow: auto;
     margin-top: 5%;
     margin-bottom: 5%;
@@ -162,6 +163,60 @@ footer{
     font-size: 1.5vw;
     padding: 14px;
     text-align: center;
+}
+
+.resumenPedido{
+    float:left;
+    width: 65%;
+    margin-bottom: 1.5em;
+    padding-bottom: 2em;
+    text-align: center;
+    border: solid black;
+}
+
+.promocion{
+    margin-right: 5%;
+    margin-bottom: 1em;
+    padding-bottom: 1.5em;
+    text-align: center;
+    float: right;
+    width:25%;
+    border: solid black;
+
+}
+
+.metodoPago{
+    float:right;
+    clear:right;    
+    margin-right: 5%;
+    padding-bottom:1.5em; 
+    text-align: center;
+    width:25%;
+    border:solid red;
+}
+
+.direccionEntrega{
+    width:65%;
+    text-align: center;
+    padding-bottom:1.5em; 
+    border:solid grey;
+    clear: left;
+}
+
+.botonPago{
+    float: right;
+    clear: right;
+    max-width: 25%;
+    margin-right: 5%;
+    margin-top: 3em;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 2em;
+}
+
+.mainPageSection .tituloPagos{
+    font-size: 1.5vw;
 }
 
 /*Diseño para dispositivos moviles, la navegacion cambia a ser una por linea*/
