@@ -1,13 +1,7 @@
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     
     <head>
-        <title>TODO supply a title</title>
+        <title>Menus y Ofertas</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
@@ -16,20 +10,19 @@ and open the template in the editor.
     <body>
         <div class= "pageWrapper" >
             <!-- header -->
-            <header class="siteHeader">
-                <img src="./imgs/pizza.jpg" alt="logo"/>
+             <header class="siteHeader">
+                <a href="home.html"><img src="./images/logo.jpg" alt="logo"/></a>
                 <h1 id="nameSite">La casa de la πzza</h1>
             </header>
 
-            <!-- nav -->
             <nav >
                 <ul class="topNav">
-                    <li><a href="/home.html">Home</a></li>
-                    <li><a href="/carta.html">Carta</a></li>
-                    <li><a href="/menus-Ofertas.html">Menus y Ofertas</a></li>
-                    <li class="rightLink"><a href="/carrito.html">Carrito</a></li>
-                    <li class="rightLink"><a href="/inicioSesion.html">Iniciar Sesion</a></li>
-                    <li class="rightLink"><a href="/miPerfil.html">Mi Perfil</a></li>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="carta.html">Carta</a></li>
+                    <li><a href="menus-Ofertas.html">Menus y Ofertas</a></li>
+                    <li class="rightLink"><a href="carrito.html">Carrito</a></li>
+                    <li class="rightLink"><a href="inicioSesion.html">Iniciar Sesion</a></li>
+                    <li class="rightLink"><a href="miPerfil.html">Mi Perfil</a></li>
                 </ul>
             </nav>
 
@@ -37,58 +30,75 @@ and open the template in the editor.
             <!-- contenido principal -->
             <main class="mainPageSection">
                 <h2>Ofertas</h2>
-                <article class="articulosOfertas2x1">
-                    <h3>2 X 1</h3>
-                    <figure>
-                        <img src="src" alt="Producto1-img"/>
-                    </figure>
-                    <figure>
-                        <img src="src" alt="Producto2-img"/>
-                    </figure>
-                    <figure>
-                        <img src="src" alt="Producto3-img"/>
-                    </figure>
-                    <figure>
-                        <img src="src" alt="Producto4-img"/>
-                    </figure>
-                    <a href="url">Ver más--></a>
-                </article>
-
-                <article class="articulosOfertasEvioGratis">
-                    <h3>Envío Gratis (Más de 15€)</h3>
-                    <figure>
-                        <img src="src" alt="Producto1-img"/>
-                    </figure>
-                    <figure>
-                        <img src="src" alt="Producto2-img"/>
-                    </figure>
-                    <figure>
-                        <img src="src" alt="Producto3-img"/>
-                    </figure>
-                    <figure>
-                        <img src="src" alt="Producto4-img"/>
-                    </figure>
+                
+                <article class="productosCarta">
                     
-                    <a href="url">Ver más--></a>
+                    <h3>2 X 1</h3>
+                    
+                    <div class="productWrapper">
+                        <div class="boxProduct">
+                            <h4>Producto</h4>
+                            <img src="./images/carta/recommended.jpg" alt="Producto recomendado ejemplo"/>
+                            <p><a href="">Añadir a la cesta</a></p>
+                        </div>
+                        
+                       <div class="boxProduct">
+                            <h4>Producto</h4>
+                            <img src="./images/carta/recommended.jpg" alt="Producto recomendado ejemplo"/>
+                            <p><a href="">Añadir a la cesta</a></p>
+                        </div>
+                        
+                        <div class="boxProduct">
+                            <h4>Producto</h4>
+                            <img src="./images/carta/recommended.jpg" alt="Producto recomendado ejemplo"/>
+                            <p><a href="">Añadir a la cesta</a></p>
+                        </div>
+                        
+                        <div class="boxProduct">
+                            <h4>Producto</h4>
+                            <img src="./images/carta/recommended.jpg" alt="Producto recomendado ejemplo"/>
+                            <p><a href="">Añadir a la cesta</a>
+                        </div>
+                        
+                        <a href=""><img src="./images/icons/next.png" alt="Next product" width="40" height="40"></a>
+                    </div>
+                </article>
+                
+                <article class="productosCarta">
+                    
+                    <h3>Nuestros Combos</h3>
+                    
+                    <div class="productWrapper">
+                        <div class="boxProduct">
+                            <h4>Combo 1</h4>
+                            <img class="comboimg" src="./images/carta/recommended.jpg" alt="Producto recomendado ejemplo"/>
+                            <p><a href="">Añadir a la cesta</a></p>
+                        </div>
+                        
+                       <div class="boxProduct">
+                            <h4>Combo 2</h4>
+                            <img src="./images/carta/recommended.jpg" alt="Producto recomendado ejemplo"/>
+                            <p><a href="">Añadir a la cesta</a></p>
+                        </div>
+                        
+                        <div class="boxProduct">
+                            <h4>Combo 3</h4>
+                            <img src="./images/carta/recommended.jpg" alt="Producto recomendado ejemplo"/>
+                            <p><a href="">Añadir a la cesta</a></p>
+                        </div>
+                        
+                        <div class="boxProduct">
+                            <h4>Combo 4</h4>
+                            <img src="./images/carta/recommended.jpg" alt="Producto recomendado ejemplo"/>
+                            <p><a href="">Añadir a la cesta</a>
+                        </div>
+                        
+                        <a href=""><img src="./images/icons/next.png" alt="Next product" width="40" height="40"></a>
+                    </div>
                 </article>
 
-                <article class="articulosOfertasCombos">
-                    <h3>Combos</h3>
-                    <figure>
-                        <img src="src" alt="Producto1-img"/>
-                    </figure>
-                    <figure>
-                        <img src="src" alt="Producto2-img"/>
-                    </figure>
-                    <figure>
-                        <img src="src" alt="Producto3-img"/>
-                    </figure>
-                    <figure>
-                        <img src="src" alt="Producto4-img"/>
-                    </figure>
-                    <a href="url">Ver más--></a>
-                </article>
             </main>
+            
             <footer>
                 Grupo DAW 2020
             </footer>
