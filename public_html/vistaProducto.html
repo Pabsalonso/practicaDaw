@@ -6,11 +6,93 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Producto</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <div>TODO write content</div>
+        
+        <div class= "pageWrapper" >
+            
+            <!-- Header -->
+            <header class="siteHeader">
+                <a href="home.html"><img src="./images/logo.jpg" alt="logo"/></a>
+                <h1 id="nameSite">La casa de la πzza</h1>
+            </header>
+            
+            <!-- nav -->
+            <nav>
+                <ul class="topNav">
+                    <li class="rightLink"><a href="cesta.html">Cesta</a></li>
+                    <li class="rightLink"><a href="micuenta.html">Mi cuenta</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Contenido. Carta: cuerpo con los distintos productos de la carta -->
+            <main class="vistaProducto-mainPageSection">
+                <h2>Producto</h2>
+                <img src="./images/carta/horizontal_pizza.jpg" alt="Ejemplo producto" class="imgProducto">
+                <div class="description"><p><h3>Descripción del producto</h3>
+                                         <p>Producto elaborado con los mejores ingredientes: de 
+                                            calidad, frescos y de cultivo sostenible. 
+                                            Este producto se elabora siguiendo
+                                            una receta tradicional que asegura el auténtico 
+                                            sabor que se espera de él.</p></div>
+                <div class="ingredients"><p><h3>Ingredientes y alérgenos:</h3>
+                                         <p>Ácidos: glutamínico, 
+                                            linoleico (Vitamina F), málico, oleico, palmítico y cafeico. 
+                                            Azúcares: fructosa, glucosa y sacarosa. Elementos: calcio, hierro, 
+                                            magnesio, nitrógeno, fósforo, potasio y zinc.</p></div>
+                <div class="amount">
+                    <form action="" method="get">
+                    <p>Cantidad: <input type="number" name="amount" min="0"></p>
+                    <p>
+                        <input type="submit" value="Añadir">
+                        <input type="reset" value="Borrar">
+                    </p>
+                    </form>
+                </div>
+                
+                <!-- Caja con los productos de la carta. Sección: Productos recomendados -->
+                <article class="productosCarta">
+                    
+                    <h3>Productos relacionados</h3>
+                    
+                    <div class="productWrapper">
+                        <div class="boxProduct">
+                            <h4>Producto</h4>
+                            <img src="./images/carta/recommended.jpg" alt="Producto recomendado ejemplo"/>
+                            <p><a href="">Añadir a la cesta</a></p>
+                        </div>
+                        
+                       <div class="boxProduct">
+                            <h4>Producto</h4>
+                            <img src="./images/carta/pizza.jpg" alt="Producto recomendado ejemplo"/>
+                            <p><a href="">Añadir a la cesta</a></p>
+                        </div>
+                        
+                        <div class="boxProduct">
+                            <h4>Producto</h4>
+                            <img src="./images/carta/postre.jpg" alt="Producto recomendado ejemplo"/>
+                            <p><a href="">Añadir a la cesta</a></p>
+                        </div>
+                        
+                        <div class="boxProduct">
+                            <h4>Producto</h4>
+                            <img src="./images/carta/hamburguesa.webp" alt="Producto recomendado ejemplo"/>
+                            <p><a href="">Añadir a la cesta</a>
+                        </div>
+                        
+                        <a href=""><img src="./images/icons/next.png" alt="Next product" width="40" height="40"></a>
+                    </div>
+                </article>
+            </main>
+            
+            <!-- footer -->
+            <footer>
+                <p>Grupo DAW 2020</p>
+            </footer>
+            </div>
     </body>
 </html>
