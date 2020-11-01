@@ -1,9 +1,5 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+
 <html>
     <head>
         <title>Casa de la Tπzza</title>
@@ -14,44 +10,113 @@ and open the template in the editor.
     <body>
         <div class= "pageWrapper" >
             
-            <!-- header -->
+            <!-- Header -->
             <header class="siteHeader">
-                <img src="./imgs/pizza.jpg" alt="logo"/>
+                <a href="index.html"><img src="./images/logo.jpg" alt="logo"/></a>
                 <h1 id="nameSite">La casa de la πzza</h1>
             </header>
             
             <!-- nav -->
             <nav>
                 <ul class="topNav">
-                    <li><a href="/home.html">Home</a></li>
-                    <li><a href="/carta.html">Carta</a></li>
-                    <li><a href="/menus-Ofertas.html">Menus y Ofertas</a></li>
-                    <li class="rightLink"><a href="/carrito.html">Carrito</a></li>
-                    <li class="rightLink"><a href="/inicioSesion.html">Iniciar Sesion</a></li>
-                    <li class="rightLink"><a href="/miPerfil.html">Mi Perfil</a></li>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./carta.html">Carta</a></li>
+                    <li><a href="./menus-Ofertas.html">Menús y Ofertas</a></li>
+                    <li class="rightLink"><a href="./cesta.html">Cesta</a></li>
+                    <li class="rightLink"><a href="./miCuenta.html">Mi cuenta</a></li>
                 </ul>
             </nav>
             
             <!-- Contenido principal -->
-            <main class="mainPageSection">
-                <h2>Mi Carrito</h2>
+            <main class="cesta-mainPageSection">
                 
-                <article class="articulosCarrito">
+                <!-- Resumen de mi pedido -->
+                <article class="mipedido">
                     
-                    <!-- Ejemplo productos carrito -->
-                    <table class="">
-                        <tr><th>Producto</th><th>Precio</th><th>Eliminar</th></tr>
-                        <tr><th>Pizza Margarita</th><th>13.00 €</th><th><a href="url">-</a></th></tr>
-                        <tr><th>Pizza Barbacoa</th><th>14.50 €</th><th><a href="url">-</a></th></tr>
-                        <tr><th>Refresco 1L.</th><th>3.50 €</th><th><a href="url">-</a></th></tr>
-                        <tr><th>Descuento</th><th>- 0.00 €</th><th><a href="url"></a></th></tr>
-                    </table>
+                    <h2>Mi pedido</h2>
+                    <div class="resumen">
+                        <div class="articulosCarrito">
+                            
+                            <!-- Ejemplo productos en cesta -->
+                            <table class="">
+                                <tr><th>Producto</th><th>Cantidad</th><th>Precio</th><th>Eliminar</th></tr>
+                                <tr><th>Pizza Margarita</th><th>1</th><th>+ 13.00 €</th><th><a href="">-</a></th></tr>
+                                <tr><th>Pizza Barbacoa</th><th>1</th><th>+ 14.50 €</th><th><a href="">-</a></th></tr>
+                                <tr><th>Refresco 1L.</th><th>1</th><th>+ 03.50 €</th><th><a href="">-</a></th></tr>
+                                <tr><th>Descuento</th><th></th><th>- 00.00 €</th><th><a href=""></a></th></tr>
+                                <tr><th>---------------------</th><th>--------------</th><th>--------------</th><th><a href=""></a></th></tr>
+                                <tr><th>Total: </th><th></th><th>XX.XX €</th><th></th></tr>
+                            </table>
+                        </div>
+                    </div>
                     
-                    <p>Total:     XX,XX €</p>
-                    
+                    <div class="tipoenvio">
+                        <h3>Tipo de envío:</h3>
+                        <form action="">
+                            <input type="radio" id="domicilio" name="Envío a domicilio">Envío a domicilio<br>
+                            <input type="radio" id="recoger" name="Recoger en tienda" checked>Recoger en tienda<br>
+                        </form>
+                    </div>
+                    <div class="siguiente">
+                        <button type="button" class="botonSiguiente">Siguiente<br>(Descuentos y Pago)</button>
+                    </div>
+                </article>
+                
+                <!-- Productos recomendados añadir carrito -->
+                <article class="productosRecomendados">
+                    <h2>Productos recomendados</h2>
+
+                    <!-- Sección postres -->
+                    <article class="productosCarta">
+                        <h4>Postres</h4>
+                        <div class="productWrapper">
+                            <div class="boxProduct_cesta">
+                                <h4>Producto</h4>
+                                <a href="vistaProducto.html"> <img src="./images/carta/recommended.jpg" alt="Producto recomendado ejemplo" height="100"/></a>
+                                <p>[<a href="">Añadir a la cesta</a>] [<a href="./vistaProducto.html">+</a>]</p>
+                            </div>
+
+                            <div class="boxProduct_cesta">
+                                <h4>Producto</h4>
+                                <a href="vistaProducto.html"> <img src="./images/carta/recommended.jpg" alt="Producto recomendado ejemplo" height="100"/></a>
+                                <p>[<a href="">Añadir a la cesta</a>] [<a href="./vistaProducto.html">+</a>]</p>
+                                
+                            </div>
+
+                            <div class="boxProduct_cesta">
+                                <h4>Producto</h4>
+                                <a href="vistaProducto.html"> <img src="./images/carta/recommended.jpg" alt="Producto recomendado ejemplo" height="100"/></a>
+                                <p>[<a href="">Añadir a la cesta</a>] [<a href="./vistaProducto.html">+</a>]</p>
+                            </div>
+                        </div>
+                    </article>
+                     
+                    <!-- Sección: Bebidas -->
+                    <article class="productosCarta">
+                        <h4>Bebidas</h4>
+                        <div class="productWrapper">
+                            <div class="boxProduct_cesta">
+                                <h4>Producto</h4>
+                                <img src="./images/carta/bebida.jpg" alt="Bebida ejemplo" height="100"/>
+                                <p>[<a href="">Añadir a la cesta</a>] [<a href="./vistaProducto.html">+</a>]</p>
+                            </div>
+
+                            <div class="boxProduct_cesta">
+                                <h4>Producto</h4>
+                                <img src="./images/carta/bebida.jpg" alt="Bebida ejemplo" height="100"/>
+                                <p>[<a href="">Añadir a la cesta</a>] [<a href="./vistaProducto.html">+</a>]</p>
+                            </div>
+
+                            <div class="boxProduct_cesta">
+                                <h4>Producto</h4>
+                                <img src="./images/carta/bebida.jpg" alt="Bebida ejemplo" height="100"/>
+                                <p>[<a href="">Añadir a la cesta</a>] [<a href="./vistaProducto.html">+</a>]</p>
+                            </div>
+
+                        </div>
+                    </article>
                 </article>
             </main>
-            
             <!-- footer -->
             <footer>
                 Grupo DAW 2020
