@@ -228,8 +228,9 @@ footer{
 }
 
 .productosCarta {
-    margin-bottom: 1em;
-    padding-bottom: 1em;
+    margin-bottom: 1%;
+    padding-bottom: 1%;
+    width: 100%;
     text-align: center;
     border: solid black;
     border-radius: 10px;
@@ -267,7 +268,6 @@ footer{
     border: solid black;
     border-radius: 10px;
 }
-/* =========================================================================  */
 
 .carta-mainPageSection h2{
     font-size: 3vw;
@@ -279,6 +279,97 @@ footer{
     border: solid black;
     border-radius: 10px;
 }
+/* =========================================================================  */
+
+/* ============================ Vista Producto ============================== */
+.vistaProducto-mainPageSection{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.vistaProducto-mainPageSection h2{
+    width: 100%;
+    
+    margin-bottom: 1%;
+    margin-top: 1%;
+    
+    border: solid black;
+    border-radius: 10px;
+}
+
+.imgProducto{
+    width: 68%;
+    
+    margin-bottom: 1%;
+    margin-top: 1%;
+    margin-right: 1%;
+    
+    border: solid black;
+    border-radius: 10px;
+}
+
+.description {
+    width: 27%;
+    
+    margin-bottom: 1%;
+    margin-top: 1%;
+    margin-left: 1%;
+    
+    padding-left: 1%;
+    padding-right: 1%;
+    
+    border: solid black;
+    border-radius: 10px;
+    
+    font-size: 150%;
+    text-align: justify;
+}
+
+.ingredients {
+    width: 66%;
+    
+    margin-bottom: 1%;
+    margin-top: 1%;
+    margin-right: 1%;
+    
+    padding-left: 1%;
+    padding-right: 1%;
+    
+    border: solid black;
+    border-radius: 10px;
+    
+    font-size: 150%;
+    text-align: justify;
+}
+
+.amount{
+    width: 29%;
+    
+    margin-bottom: 1%;
+    margin-top: 1%;
+    margin-left: 1%;
+    
+    border: solid black;
+    border-radius: 10px;
+    
+    font-size: 200%;
+    text-align: center;
+}
+
+.vistaProducto-mainPageSection h2{
+    font-size: 3vw;
+    align-self: center;
+    width: 100%;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    text-align: center;
+    border: solid black;
+    border-radius: 10px;
+}
+
+/* ========================================================================== */
 
 /*Diseño para dispositivos moviles, la navegacion cambia a ser una por linea*/
 @media screen and (max-width: 800px) {
