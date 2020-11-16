@@ -2,78 +2,116 @@
 
 <html>
     <head>
-        <title>Casa de la Tπzza</title>
+        <title>La casa de la πzza</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="./css/index.css">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div class= "pageWrapper" >
-            
+        
+        <div class="container">
             <!-- Header -->
-            <header class="siteHeader">
-                <a href="index.html"><img src="./images/logo.jpg" alt="logo"/></a>
-                <h1 id="nameSite">La casa de la πzza</h1>
+            <header>
+                <div class="header-logo-name">
+                    <!-- Logo -->
+                    <a href="/" class="brand-logo">
+                        <img src="./images/logo.png" class="logo" alt="logo">
+                    </a>
+                
+                    <!-- Name web -->
+                    <a href="/">
+                        <h1>La casa de la πzza</h1>
+                    </a>
+                    
+                </div>  
             </header>
+            
+            <!-- nav -->
+            <nav class="topNav">
+                <ul class="leftLink">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Carta</a></li> 
+                    <li><a href="#">Menús y Ofertas</a></li> 
+                </ul> 
 
-            <nav >
-                <ul class="topNav">
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./carta.html">Carta</a></li>
-                    <li><a href="./menus-Ofertas.html">Menus y Ofertas</a></li>
-                    <li class="rightLink"><a href="./cesta.html">Cesta</a></li>
-                    <li class="rightLink"><a href="./inicioSesion.html">Iniciar Sesion</a></li>
-                    <li class="rightLink"><a href="./miCuenta.html">Mi Perfil</a></li>
+                <ul class="rightLink">
+                    <li><a href="#">Cesta</a></li>
+                    <li><a href="#">Registrarse</a></li> 
+                    <li><a href="#">Iniciar sesión</a></li> 
                 </ul>
             </nav>
-            
-            <main class="home-mainPageSection">
-                
-                <article class="ofertaDestacada">
-                    <h2>¡Promoción destacada temporal!</h2>
-                    <figure>
-                        <img src="./images/carta/horizontal_pizza_alargada.jpg" alt="Carta_oferta"/>
-                    </figure>
-                    <p>Descripción de la oferta. [<a href="./carta.html">Enlace</a>] </p>
-                </article>
-                                
-                <article class="articulosPrincipales">
-                    <h3>Nuestra Carta</h3>
-                    <figure>
-                        <img src="./images/carta/carta.jpg" alt="NuestraCarta-img" width="250" height="250"/>
-                    </figure>
-                    <p>Echa un ojo a nuestra carta, tenemos una seleccion de las mejores 
-                        pizzas de la ciudad, y para todos los gustos. [<a href="./carta.html">Ver más</a>]</p>
-                </article>
 
-                <article class="menus-ofertas-main">
-                    <h3>Menús y ofertas</h3>
-                    <figure>
-                        <img src="./images/carta/oferta.jpg" alt="ofertas-img" width="250" height="250"/>
-                    </figure>
-                    <p>Ahorra dinero en articulos seleccionados, o elige un menú
-                        completo para ti o para compartir. [<a href="./menus-Ofertas.html">Ver más</a>]</p>
-                </article>
-              
-                <article class="entrega-domicilio-main">
-                    <h3>Entrega a domicilio</h3>
-                    <!--<figure>
-                        <img src="src" alt="Take Away-img"/>
-                    </figure>-->
-                    <p>Con nuestro servicio a domicilio, podras pedir lo que quieras a donde quieras,
-                    solo inicia sesión y dinos donde te encuentras. [<a href="">Ver más</a>]</p>
-                </article>
-
-                <article class="nuestros-restaurantes">
-                    <h3>Nuestros Restaurantes</h3>
-                    <!--<figure>
-                        <img src="src" alt="Restaurantes-img"/>
-                    </figure>-->
-                    <p>Consulta nuestros restaurantes y horarios. Inicia sesión para
-                        poder realizar reservas en tu restaurante más cercano. [<a href="">Ver más</a>]</p>
-                </article>
+            <!-- Contenido. -->
+            <main>
                 
+                <div class="main-container">
+                    <!-- Banner de la oferta -->
+                    <article class="featured-offer">
+                        <h2>¡Promoción destacada temporal!</h2>
+                        <figure>
+                            <img src="./images/carta/pizza_grande_horizontal.jpg" alt="Carta_oferta" class="responsive"/>
+                        </figure>
+                    </article>
+
+                    <!-- Menú con las opciones principales de nuestro sitio -->
+                    <article class="main-menu">
+                        <!-- Nuestra carta-->
+                        <section class="section-menu">
+                            <h3>Nuestra Carta</h3>
+                            <figure>
+                                <img src="./images/carta/carta.jpg" alt="NuestraCarta-img" width="250" height="250"/>
+                            </figure>
+                            <div class="text-menu">
+                            <p>Echa un ojo a nuestra carta, tenemos una seleccion de las mejores 
+                                pizzas de la ciudad, y para todos los gustos. [<a href="./menu.html">Ver más</a>]</p>
+                            </div>
+                        </section>
+
+                        <!-- Menús y Ofertas -->
+                        <section class="section-menu">
+                            <h3>Menús y Ofertas</h3>
+                            <figure>
+                                <img src="./images/carta/oferta.jpg" alt="ofertas-img" width="250" height="250"/>
+                            </figure>
+                            <div class="text-menu">
+                            <p>Ahorra dinero en articulos seleccionados, o elige un menú
+                                completo para ti o para compartir. [<a href="./menu.html">Ver más</a>]</p>
+                            </div>
+                        </section>
+
+                        <!-- Entrga a domicilio -->
+                        <section class="section-menu">
+                            <h3>Entrega a Domicilio</h3>
+                            <figure>
+                                <img src="./images/carta/pizza-box.jpg" alt="Take Away-img" width="250" height="250"/>
+                            </figure>
+                            <div class="text-menu">
+                            <p>Con nuestro servicio a domicilio, podras pedir lo que quieras a donde quieras,
+                                solo inicia sesión y dinos donde te encuentras. [<a href="">Ver más</a>]</p>
+                            </div>
+                        </section> 
+
+                        <!-- Nuestros restaurantes -->
+                        <section class="section-menu">
+                            <h3>Nuestros Restaurantes</h3>
+                            <figure>
+                                <img src="./images/otros/gps.jpg" alt="Restaurantes-img" width="250" height="240"/>
+                            </figure>
+                            <div class="text-menu">
+                            <p>Consulta nuestros restaurantes y horarios. Inicia sesión para
+                                poder realizar reservas en tu restaurante más cercano. [<a href="">Ver más</a>]</p>
+                            </div>
+                        </section>
+                    </article>
+                </div>
+
             </main>
+
+            <!-- Footer -->
             <footer>
                 <p>Grupo DAW 2020</p>
             </footer>
