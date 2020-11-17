@@ -41,10 +41,9 @@
 
 .section-menu {
     background-color: #EDC988;
-    max-width: 380px;
-    min-height: 35vh;
+    max-width: 360px;
     border: 1px solid black;
-    margin: 1rem 1rem 1rem 1rem;
+    margin: 0.4rem 0.4rem 0.4rem 0.4rem;
     border-radius: 5px;
 }
 
