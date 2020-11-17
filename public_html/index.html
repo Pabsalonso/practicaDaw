@@ -1,120 +1,148 @@
-<!DOCTYPE html>
+<!DOCTYPE html lang="es">
 
 <html>
-    <head>
-        <title>La casa de la πzza</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./css/styles.css">
-        <link rel="stylesheet" href="./css/index.css">
-        
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        
-        <div class="container">
-            <!-- Header -->
-            <header>
-                <div class="header-logo-name">
+
+<head>
+    <title>La casa de la πzza</title>
+    <meta charset="UTF-8">
+
+    <!-- Responsive meta tag-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/index.css">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap-->
+    <!--CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+        <!-- Header -->
+        <header class="header-logo-name">
+            <div class="row">
+                <div class="col-xl">
                     <!-- Logo -->
-                    <a href="./index.html" class="brand-logo">
+                    <a href="./index.html">
                         <img src="./images/logo.png" class="logo" alt="logo">
                     </a>
-                
+
                     <!-- Name web -->
-                    <a href="./index.html">
+                    <a href="./index.html" class="header-logo-name">
                         <h1>La casa de la πzza</h1>
                     </a>
-                    
-                </div>  
-            </header>
-            
-            <!-- nav -->
-            <nav class="topNav">
-                <ul class="leftLink">
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./menu.html">Carta</a></li> 
-                    <li><a href="./offers.html">Menús y Ofertas</a></li> 
-                </ul> 
+                </div>
+            </div>
+        </header>
 
-                <ul class="rightLink">
-                    <li><a href="./cart.html">Cesta</a></li>
-                    <li><a href="./logUp.html">Registrarse</a></li> 
-                    <li><a href="./logIn.html">Iniciar sesión</a></li> 
-                </ul>
-            </nav>
+        <!-- nav -->
+        <nav class="topNav">
+            <div class="row">
+                <div class="col">
+                    <ul class="nav nav-fills justify-content-start">
+                        <li class="nav-item"><a href="./index.html">Home</a></li>
+                        <li class="nav-item"><a href="./menu.html">Carta</a></li>
+                        <li class="nav-item"><a href="./offers.html">Menús y Ofertas</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item"><a href="./cart.html">Cesta</a></li>
+                        <li class="nav-item"><a href="./logUp.html">Registrarse</a></li>
+                        <li class="nav-item"><a href="./logIn.html">Iniciar sesión</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-            <!-- Contenido. -->
-            <main>
-                
-                <div class="main-container">
-                    <!-- Banner de la oferta -->
-                    <article class="featured-offer">
-                        <h2>¡Promoción destacada temporal!</h2>
+        <!-- Contenido. -->
+        <main>
+            <div class="main-container">
+                <!-- Banner de la oferta -->
+                <article class="featured-offer">
+                    <h2>¡Promoción destacada temporal!</h2>
+                    <figure>
+                        <img src="./images/carta/pizza_grande_horizontal.jpg" alt="Carta_oferta" class="responsive" />
+                    </figure>
+                </article>
+
+                <!-- Menú con las opciones principales de nuestro sitio -->
+                <article class="main-menu">
+                    <!-- Nuestra carta-->
+                    <section class="section-menu">
+                        <h3>Nuestra Carta</h3>
                         <figure>
-                            <img src="./images/carta/pizza_grande_horizontal.jpg" alt="Carta_oferta" class="responsive"/>
+                            <img src="./images/carta/carta.jpg" alt="NuestraCarta-img" width="250" height="250" />
                         </figure>
-                    </article>
-
-                    <!-- Menú con las opciones principales de nuestro sitio -->
-                    <article class="main-menu">
-                        <!-- Nuestra carta-->
-                        <section class="section-menu">
-                            <h3>Nuestra Carta</h3>
-                            <figure>
-                                <img src="./images/carta/carta.jpg" alt="NuestraCarta-img" width="250" height="250"/>
-                            </figure>
-                            <div class="text-menu">
-                            <p>Echa un ojo a nuestra carta, tenemos una seleccion de las mejores 
+                        <div class="text-menu">
+                            <p>Echa un ojo a nuestra carta, tenemos una seleccion de las mejores
                                 pizzas de la ciudad, y para todos los gustos. [<a href="./menu.html">Ver más</a>]</p>
-                            </div>
-                        </section>
+                        </div>
+                    </section>
 
-                        <!-- Menús y Ofertas -->
-                        <section class="section-menu">
-                            <h3>Menús y Ofertas</h3>
-                            <figure>
-                                <img src="./images/carta/oferta.jpg" alt="ofertas-img" width="250" height="250"/>
-                            </figure>
-                            <div class="text-menu">
+                    <!-- Menús y Ofertas -->
+                    <section class="section-menu">
+                        <h3>Menús y Ofertas</h3>
+                        <figure>
+                            <img src="./images/carta/oferta.jpg" alt="ofertas-img" width="250" height="250" />
+                        </figure>
+                        <div class="text-menu">
                             <p>Ahorra dinero en articulos seleccionados, o elige un menú
                                 completo para ti o para compartir. [<a href="./menu.html">Ver más</a>]</p>
-                            </div>
-                        </section>
+                        </div>
+                    </section>
 
-                        <!-- Entrga a domicilio -->
-                        <section class="section-menu">
-                            <h3>Entrega a Domicilio</h3>
-                            <figure>
-                                <img src="./images/carta/pizza-box.jpg" alt="Take Away-img" width="250" height="250"/>
-                            </figure>
-                            <div class="text-menu">
+                    <!-- Entrga a domicilio -->
+                    <section class="section-menu">
+                        <h3>Entrega a Domicilio</h3>
+                        <figure>
+                            <img src="./images/carta/pizza-box.jpg" alt="Take Away-img" width="250" height="250" />
+                        </figure>
+                        <div class="text-menu">
                             <p>Con nuestro servicio a domicilio, podras pedir lo que quieras a donde quieras,
                                 solo inicia sesión y dinos donde te encuentras. [<a href="">Ver más</a>]</p>
-                            </div>
-                        </section> 
+                        </div>
+                    </section>
 
-                        <!-- Nuestros restaurantes -->
-                        <section class="section-menu">
-                            <h3>Nuestros Restaurantes</h3>
-                            <figure>
-                                <img src="./images/otros/gps.jpg" alt="Restaurantes-img" width="250" height="240"/>
-                            </figure>
-                            <div class="text-menu">
+                    <!-- Nuestros restaurantes -->
+                    <section class="section-menu">
+                        <h3>Nuestros Restaurantes</h3>
+                        <figure>
+                            <img src="./images/otros/gps.jpg" alt="Restaurantes-img" width="250" height="240" />
+                        </figure>
+                        <div class="text-menu">
                             <p>Consulta nuestros restaurantes y horarios. Inicia sesión para
                                 poder realizar reservas en tu restaurante más cercano. [<a href="">Ver más</a>]</p>
-                            </div>
-                        </section>
-                    </article>
-                </div>
+                        </div>
+                    </section>
+                </article>
+            </div>
 
-            </main>
+        </main>
 
-            <!-- Footer -->
-            <footer>
-                <p>Grupo DAW 2020</p>
-            </footer>
-        </div>
-    </body>
+        <!-- Footer -->
+        <footer>
+            <p>Grupo DAW 2020</p>
+        </footer>
+    </div>
+
+    <!-- Bootstrap-->
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
