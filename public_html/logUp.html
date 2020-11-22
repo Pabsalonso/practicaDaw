@@ -1,7 +1,5 @@
 <!DOCTYPE html lang="es">
-
 <html>
-
 <head>
     <title>Log Up</title>
     <meta charset="UTF-8">
@@ -12,6 +10,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/logUp.css">
+    <link rel="stylesheet" href="./pruebas_logup.css">
 
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -25,7 +24,7 @@
 
 <body>
 
-    <div class="container-fluid">
+    <div>
 
         <!-- Header -->
         <header class="header-logo-name">
@@ -69,75 +68,129 @@
 
             <div class="main-container">
 
-                <article class=form-content>
-                    <div class="row">
-                        <div class="col">
-                            <h2>Registro</h2>
+                <article>
+
+                    <div class="container-fluid form-content">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12">
+                                <h2>Registro</h2>
+                            </div>
                         </div>
-                    </div>
 
                     <!-- Form -->
-                    <form class="form-content" method="POST" action="#">
+                    <form method="POST" id="logUp-form" action="#">
                         <div class="form-row">
-                            <div class="col-xl">
+                            <div class="col-xs-12 col-sx-12 col-md-6">
+
                                 <h3>Cuenta</h3>
-                                <!-- email -->
+
+                                <!-- Correo electrónico -->
                                 <div class="form-group">
-                                    <label for="email">Correo electrónico</label>
-                                    <input id="email" class="form-control form-control" type="text"
-                                        aria-describedby="emailHelp" placeholder="nombre@ejemplo.com">
+
+                                    <label for="input-email">Correo electrónico</label>
+                                    <input  id="input-email" 
+                                            class="form-control" 
+                                            type="text"
+                                            placeholder="correo@mail.com" 
+                                            required
+                                            pattern="\w{1,}@\w{1,}\.\w{1,}\s*"
+                                            oninput="checkEmailValidity()">
                                 </div>
-                                <!-- re-emain -->
+
+                                <!-- Repetir el correo electrónico -->
                                 <div class="form-group">
-                                    <label for="re-email">Repetir correo electrónico</label>
-                                    <input id="re-email" class="form-control" type="text">
+                                    <label for="input-re-email">Repetir correo electrónico</label>
+                                    <input  id="input-re-email" 
+                                            class="form-control" 
+                                            type="text" 
+                                            required
+                                            pattern="\w{1,}@\w{1,}\.\w{1,}\s*"
+                                            oninput="checkEmailValidity()">
                                 </div>
-                                <!-- pass -->
+
+                                <!-- Contraseña -->
                                 <div class="form-group">
-                                    <label for="pass">Contraseña</label>
-                                    <input id="pass" class="form-control" type="password"">
+                                    <label for="input-pass">Contraseña</label>
+                                    <input  id="input-pass" 
+                                            class="form-control" 
+                                            type="password" 
+                                            minlength="8"
+                                            maxlength="32"
+                                            oninput="checkPasswordValidity()"
+                                            required>
                                 </div>
-                                <!-- re-pass -->
+
+                                <!-- Repetir contraseña -->
                                 <div class=" form-group">
-                                    <label for="re-pass">Contraseña</label>
-                                    <input id="re-pass" class="form-control" type="password">
+                                    <label for="input-re-pass">Contraseña</label>
+                                    <input  id="input-re-pass" 
+                                            class="form-control" 
+                                            type="password"  
+                                            minlength="8"
+                                            maxlength="32"
+                                            oninput="checkPasswordValidity()"
+                                            required>
                                 </div>
                             </div>
 
-                            <div class="col-xl">
+                            <div class="col-xs-12 col-sx-12 col-md-6">
+                                
                                 <h3>Datos personales</h3>
-                                <!-- nombre -->
+                                
+                                <!-- Nombre -->
                                 <div class="form-group">
-                                    <label for="name">Nombre</label>
-                                    <input id="name" class="form-control" type="text">
+                                    <label for="input-name">Nombre</label>
+                                    <input  id="input-name" 
+                                            class="form-control" 
+                                            type="text" 
+                                            required>   <!-- pattern="^[A-Za-z]{1,}$" -->
                                 </div>
-                                <!-- apellidos -->
+
+                                <!-- Apellidos -->
                                 <div class="form-group">
                                     <label for="last-name">Apellidos</label>
-                                    <input id="last-name" class="form-control" type="text">
+                                    <input id="last-name" 
+                                           class="form-control"                                            
+                                           type="text"> <!-- pattern="(\w{1,}\s{0,1}){1,3}" -->
                                 </div>
-                                <!-- edad -->
+
+                                <!-- Edad -->
                                 <div class="form-group">
-                                    <label for="age">Edad</label>
-                                    <input id="age" class="form-control" type="number">
+                                    <label for="input-age">Edad</label>
+                                    <input id="input-age" 
+                                           class="form-control" 
+                                           type="number" 
+                                           required 
+                                           min="8" 
+                                           max="110"
+                                           value="16"
+                                           oninput="checkAge()">
                                 </div>
-                                <!-- teléfono móvil -->
+
+                                <!-- Teléfono móvil -->
                                 <div class="form-group">
-                                    <label for="tel">Teléfono</label>
-                                    <input id="tel" class="form-control" type="tel">
+                                    <label for="input-tel">Teléfono</label>
+                                    <input  id="input-tel" 
+                                            class="form-control" 
+                                            type="tel" 
+                                            pattern="^([+]{1}\d{1,3}\s{0,1}){0,1}\d{6,12}$"
+                                            required>
                                 </div>
-                                <!-- ciudad -->
                             </div>
                         </div>
+
                         <div class="row-button">
                             <button type="submit" class="btn btn-primary form-button">Registrarse</button>
+                            
                             <div class="col-md terms-cond">
                                 <p>Al crear la cuenta, aceptas nuestros <a href="#">términos y condiciones</a>.
                                     Por favor, lee nuestra <a href="#">política de privacidad</a> y nuestra <a
                                         href="#">política de cookies</a>.</p>
                             </div>
+                        
                         </div>
                     </form>
+                </div>
                 </article>
             </div>
         </main>
@@ -156,6 +209,44 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
         crossorigin="anonymous"></script>
+
+    <!-- Scripts - Form validation -->
+    <script>
+        var inputEmail = document.getElementById("input-email");
+        var inputReEmail = document.getElementById("input-re-email");
+        var inputPass = document.getElementById("input-pass");
+        var inputRePass = document.getElementById("input-re-pass");
+
+        var button = document.querySelector(".form-button");
+
+        function checkEmailValidity() {
+            if ( inputEmail.patternMismatch ){
+                inputReEmail.setCustomValidity("Por favor, introduce un email válido (p.e. abc3@email.com)");
+            } 
+            if ( inputEmail.value != inputReEmail.value ) {
+                inputReEmail.setCustomValidity("¡Los correos no coinciden!");
+            } else {
+                inputReEmail.setCustomValidity("");
+            }
+        }
+
+        var pass_regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])([A-Za-z\d$@$!%*?&]|[^ ]){8,32}$/;
+
+        function checkPasswordValidity() {
+            if ( pass_regex.test( inputPass.value ) != true) { 
+                inputPass.setCustomValidity("Complejidad insuficiente: Entre 8-32 caracteres. Al menos una letra mayúscula. "
+                                            + "Al menos una letra minúscula. Al menos un dígito. No espacios en blanco. Al menos un caracter especial. ");
+            } else {
+                inputPass.setCustomValidity("");
+            }
+
+            if (inputRePass.value != inputPass.value ) {
+                inputRePass.setCustomValidity("¡Las contraseñas no coinciden!");
+            } else {
+                inputRePass.setCustomValidity("");
+            }
+        }
+    </script>
 
 </body>
 
