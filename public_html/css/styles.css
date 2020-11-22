@@ -19,12 +19,12 @@ header {
 }
 
 .header-logo-name {
-    background-color: #843103;
+    background-color: #a73d04;
 }
 
 header h1 {
     font-size: 6em;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Dancing Script', cursive;
     
     text-align: center;
 }
