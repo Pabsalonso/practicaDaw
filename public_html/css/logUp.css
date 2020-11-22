@@ -1,5 +1,4 @@
 .logUp-content {
-    text-align: center;
     padding: 4em;
 }
 
@@ -10,22 +9,23 @@ h2{
 
 h3{
     font-weight: bold !important;
-    text-align: center;
 }
 
 .form-content {
-    padding: 2em 2em 2em 2em;
-    
     text-align: center;
     background-color: #C87941;
 }
 
-form.form-content{
+.form-group{
     text-align: left;
 }
 
 .form-control {
     background-color: #fdb36e !important;
+}
+
+input:hover{
+    background-color: #e6964c !important;
 }
 
 .form-button {
@@ -44,28 +44,31 @@ form.form-content{
     border: 2px black solid !important;
 }
 
+.form-button:hover {
+    background-color: #f86700 !important;
+}
+
 .terms-cond {
     font-family: Consolas;
-    text-align: justify;
+    text-align: center;
+    padding: 1em 0 0.4em 0;
 }
+
+/* input:invalid {
+    border: 2px dashed red !important;
+  }
+  
+  input:valid {
+    border: 2px solid rgb(19, 233, 0) !important;
+  }
+  
+  input:focus:invalid {
+    border: black !important;
+  } */
 
 @media only screen and (max-width: 750px) {
     .logUp-content {
-        padding: 0.2em;
-    }
-
-    .form-content {
-        padding: 0.8em 0.8em 0.8em 0.8em !important;
-        margin: 0em 0em 0em 0em !important;
-    }
-
-    h2{
-        font-size: 2em !important;
-        font-weight: bold !important;
-    }
-    
-    h3{
-        font-size: 1.5em !important;
+        padding: 1.4em;
     }
 
     .form-button {
