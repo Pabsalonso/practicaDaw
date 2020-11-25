@@ -1,0 +1,82 @@
+{
+        "Nuestras Recomendaciones":[
+            {
+                
+                "nombre":"Pizza Margarita",
+                "ingredientes":"prueba",
+                "Descripción":"Prueba de texto",
+                "Precio":15
+            }
+        ],
+    
+    
+        "Pizzas": [
+            {
+                "id":1,
+                "nombre":"Pizza margarita",
+                "ingredientes":"prueba",
+                "Descripción":"Prueba de texto",
+                "Precio":15
+            },
+            {
+                "id":2,
+                "nombre":"Pizza carbonara",
+                "ingredientes":"prueba",
+                "Descripción":"Prueba de texto",
+                "Precio":13.2
+            },
+            {
+                "id":3,
+                "nombre":"Pizza Barbacoa",
+                "ingredientes":"prueba",
+                "Descripción":"Prueba de texto",
+                "Precio":15
+            },
+            {
+                "id":4,
+                "nombre":"Pizza Napolitana",
+                "ingredientes":"prueba",
+                "Descripción":"Prueba de texto",
+                "Precio":15
+            },
+            {
+                "id":5,
+                "nombre":"Pizza Hawaiana",
+                "ingredientes":"prueba",
+                "Descripción":"Prueba de texto",
+                "Precio":15
+            },
+            {
+                "id":6,
+                "nombre":"Pizza 4 Quesos",
+                "ingredientes":"prueba",
+                "Descripción":"Prueba de texto",
+                "Precio":15
+            },
+            {
+                "id":7,
+                "nombre":"Pizza Diavola",
+                "ingredientes":"prueba",
+                "Descripción":"Prueba de texto",
+                "Precio":15
+            }
+        ],
+        
+        "hamburguesas": [
+            {
+                "id":8,
+                "nombre":"La tejana",
+                "ingredientes":"prueba",
+                "Descripción":"Prueba de texto"
+            },
+            {
+                "id":9,
+                "nombre":"CHeeseburger",
+                "ingredientes":"prueba",
+                "Descripción":"Prueba de texto"
+            }
+        ],
+        "Bebidas":[
+               
+        ]
+}
