@@ -20,8 +20,28 @@ $(document).ready(function(){
         }
     };
     
-    var id =getUrlParameter('productid');
-    alert(id);
+    loadProduct();
+    
+    function loadProduct(){
+        var menuMuestra ="";
+        var idURL =getUrlParameter('productid');
+        $.getJSON("./JS/datosMenu.json",function (menu){
+
+            $.each(menu,function(key,value){       //bucle que itera por el json
+                if(menu[key].length===0) //como comprobar que esta vacio
+                return;
+                
+                $.each(this, function(foodType, values){    //bucle que itera por los arrays
+                    if(parseInt(this['id'],10) === parseInt(idURL,10)){
+                        var element =document.getElementById("tituloProducto");
+                        element.innerHTML=this['nombre'];
+                        return false;
+                    }
+                });
+            });
+            $('#menu').append(menuMuestra); 
+        });
+    }
     
 });
 

@@ -29,14 +29,15 @@
     <div class='container-fluid'>
 
         <!-- Header -->
-        <header class="header-logo-name">
+        <header>
             <div class="row">
-                <div class="col-xl">
+                <div class="col-2 d-xs-none">
                     <!-- Logo -->
                     <a href="./index.html">
-                        <img src="./images/logo.png" class="logo" alt="logo">
+                        <img src="./images/logo.png" class="logo img-responsive w-100" alt="logo">
                     </a>
-
+                </div>
+                <div class="col-10 col-xs-12 responsive-texts d-flex justify-content-center align-items-center">
                     <!-- Name web -->
                     <a href="./index.html" class="header-logo-name">
                         <h1>La casa de la πzza</h1>
@@ -70,16 +71,33 @@
 
             <div>
 
-                <article id='infoProducto' class="menu-section">
-                    <div id="content" class= "row text-center menu-product">
-                       <div class="col-12">
-                            <h3> Hola</h3> 
+                <article id='infoProducto' class="menu-section container-fluid">
+                    <!--<div id="content" class= "row text-center menu-product">-->
+                    <div class="row">
+                        <div class="col-12  product-name responsive-texts">
+                            <h2 id="tituloProducto"> </h2> 
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-3 item ">
-                            <h3> Hola</h3> 
-                        </div>
-                        
                     </div>
+                    
+                    <div class="row">
+<!--                        <div class=" col col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-6 offset-sm-2 offset-md-0 
+                                 offset-l-0 offset-xl-0 item ">-->
+                                
+                        <div class=" col col-xs-12 offset-md-0 
+                                 offset-l-0 offset-xl-0 item ">
+                                <img class="img-responsive w-100" src="./images/carta/hamburguesa.webp" alt="alt" > 
+                            </div>
+                            <div class="col col-xs-12 menu-product">
+                            <!--<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 menu-product">-->
+                                
+                            <p id="descripcionProducto" class="responsive-texts"> lajskdfñjdslñfjaskdfjñlsadjflsdjflsajd
+                                sjdflñasdjfljasdlfjlajsdfjasñjlflsa
+                                sñdfjalñsjdfljasldfjñlasjdfñasdf
+                                añsdjflasjdfljsdf</p>  
+                            </div>
+                    </div>    
+                        
+                    <!--</div>-->
                 </article>
             </div>
         </main>

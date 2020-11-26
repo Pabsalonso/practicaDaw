@@ -11,37 +11,44 @@
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
     </head>
     <body>
-        
-        <div class="container">
+         <div class='container-fluid'>
+
             <!-- Header -->
             <header>
-                <div class="header-logo-name">
-                    <!-- Logo -->
-                    <a href="./index.html" class="brand-logo">
-                        <img src="./images/logo.png" class="logo" alt="logo">
-                    </a>
-                
-                    <!-- Name web -->
-                    <a href="./index.html">
-                        <h1>La casa de la πzza</h1>
-                    </a>
-                    
-                </div>  
+                <div class="row">
+                    <div class="col-2 d-xs-none">
+                        <!-- Logo -->
+                        <a href="./index.html">
+                            <img src="./images/logo.png" class="logo img-responsive w-100" alt="logo">
+                        </a>
+                    </div>
+                    <div class="col-10 col-xs-12 responsive-texts d-flex justify-content-center align-items-center">
+                        <!-- Name web -->
+                        <a href="./index.html" class="header-logo-name">
+                            <h1>La casa de la πzza</h1>
+                        </a>
+                    </div>
+                </div>
             </header>
-            
+
             <!-- nav -->
             <nav class="topNav">
-                <ul class="leftLink">
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./menu.html">Carta</a></li> 
-                    <li><a href="./offers.html">Menús y Ofertas</a></li> 
-                </ul> 
-
-                <ul class="rightLink">
-                    <li><a href="./cart.html">Cesta</a></li>
-                    <li><a href="./logUp.html">Registrarse</a></li> 
-                    <li><a href="./logIn.html">Iniciar sesión</a></li> 
-                </ul>
+                <div class="row">
+                    <div class="col">
+                        <ul class="nav nav-fills justify-content-start">
+                            <li class="nav-item"><a href="./index.html">Home</a></li>
+                            <li class="nav-item"><a href="./menu.html">Carta</a></li>
+                            <li class="nav-item"><a href="./offers.html">Menús y Ofertas</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul class="nav justify-content-end">
+                            <li class="nav-item"><a href="./cart.html">Cesta</a></li>
+                            <li class="nav-item"><a href="./logUp.html">Registrarse</a></li>
+                            <li class="nav-item"><a href="./logIn.html">Iniciar sesión</a></li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
 
             <!-- Contenido. -->

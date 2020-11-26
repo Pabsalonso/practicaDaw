@@ -11,11 +11,13 @@
 /* Header */
 header {
     grid-area: header;
+    background-color: #a73d04;
 }
 
+
 .logo {
-    height: 140px;
-    float: left;
+    margin-top:1.5vw;
+    margin-bottom:1.5vw;
 }
 
 .header-logo-name {
@@ -23,7 +25,6 @@ header {
 }
 
 header h1 {
-    font-size: 6em;
     font-family: 'Dancing Script', cursive;
     
     text-align: center;
@@ -40,7 +41,7 @@ header a:hover{
 
 /* Nav */
 .topNav{    
-    border: 1px solid black;
+    border: 0.1vw solid black;
     background-color: #87431D;
 }
 
@@ -50,9 +51,10 @@ header a:hover{
 }
 
 .topNav a{
+    font-size: 2vw;
     float: left;
     color: black;
-    padding: 14px 14px;
+    padding: 0.5vw 0.5vw;
     text-decoration: none;
     text-align: center;
 }
@@ -67,10 +69,21 @@ header a:hover{
 
 .topNav li {
     background-color: #C87941;
-    margin: 5px;
-    border-radius: 15px;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    margin: 0.2vw;
+    border-radius: 0.5vw;
 }
 
+.responsive-texts{
+    font-size:1.5vw;
+}
+.responsive-texts h1{
+    font-size: 7vw;
+}
+.responsive-texts h2{
+    font-size: 3vw;
+}
 /* Main */
 main {
     background-color: #EDC988;
@@ -80,7 +93,7 @@ main {
     border: 1px solid black;
 }
 
- Footer 
+/* Footer */
 footer {
     background-color: black;
     grid-area: footer;
@@ -111,14 +124,7 @@ footer {
     header .logo {
         display:none;
     }
-    
-    header h1 {
-        font-size: 2em;
-        margin: 0;
-        padding: 1rem 1rem 1rem 1rem;
-        margin: 0;
-    }
-    
+       
     /* nav */
 
     .topNav a{

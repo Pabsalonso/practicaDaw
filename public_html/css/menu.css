@@ -3,6 +3,9 @@
     margin: 0.5em;
     padding: 0.5em;
 }
+.menu-section img{
+    padding-top: 1vw;
+}
 
 .menu-content {
     margin: 1em 0 1em 0;
@@ -26,6 +29,11 @@
 
     border: 1px solid black;
     border-radius: 5px;
+}
+.product-name{
+    background-color: #DF6C1B;
+    text-align: center;
+    border: 1px solid black;
 }
 
 .menu-more {
