@@ -20,7 +20,21 @@ $(document).ready(function(){
         }
     };
     
+    var freq=1000;
+    
+    function startAjaxCalls(){
+        setTimeout(function(){
+                loadProduct();
+                startAjaxCalls();
+            },
+            freq
+        );
+    }
+    
     loadProduct();
+    startAjaxCalls();
+    
+
     
     function loadProduct(){
         var menuMuestra ="";
@@ -35,6 +49,9 @@ $(document).ready(function(){
                     if(parseInt(this['id'],10) === parseInt(idURL,10)){
                         var element =document.getElementById("tituloProducto");
                         element.innerHTML=this['nombre'];
+                        
+                        element =document.getElementById("descripcionProducto");
+                        element.innerHTML=this['descripcion'];
                         return false;
                     }
                 });

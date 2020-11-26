@@ -1,0 +1,27 @@
+{       
+        "User": [
+            {
+                "logged":false,
+                "id":1,
+                "nick":"admin",
+                "passwd":"adm",
+                "nombre":"Elje",
+                "apellido":"fazo",
+                "domicilio":"Casa de la pizza HQ",
+                "correo":"correodejefazo@gmail.com",
+                "carrito":[]
+            },
+            {
+                "logged":false,
+                "id":2,
+                "nick":"Palonso",
+                "passwd":"1234",
+                "nombre":"Pablo",
+                "apellido":"Alonso",
+                "domicilio":"Mi casa",
+                "correo":"pabloalonocorreo@gmail.com",
+                "carrito":[]
+            }
+        ]
+
+}
