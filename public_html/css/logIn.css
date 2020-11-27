@@ -1,0 +1,16 @@
+.botonLogin{
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+
+
+.container-login{
+    background-color: #C87941;
+
+    text-align: center;
+    padding: 1vw;
+    margin: 1vw;
+
+    border: 0.1vw solid black;
+    border-radius: 1vw;
+}

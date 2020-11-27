@@ -1,9 +1,3 @@
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 $(document).ready(function(){
     var getUrlParameter = function getUrlParameter(sParam) {
         var sPageURL = window.location.search.substring(1),
@@ -37,7 +31,6 @@ $(document).ready(function(){
 
     
     function loadProduct(){
-        var menuMuestra ="";
         var idURL =getUrlParameter('productid');
         $.getJSON("./JS/datosMenu.json",function (menu){
 
@@ -47,7 +40,9 @@ $(document).ready(function(){
                 
                 $.each(this, function(foodType, values){    //bucle que itera por los arrays
                     if(parseInt(this['id'],10) === parseInt(idURL,10)){
-                        var element =document.getElementById("tituloProducto");
+                        var element=document.getElementById("tituloPage");
+                        element.innerHTML=this['nombre']+" - Informacion de producto";
+                        element =document.getElementById("tituloProducto");
                         element.innerHTML=this['nombre'];
                         
                         element =document.getElementById("descripcionProducto");
@@ -56,7 +51,6 @@ $(document).ready(function(){
                     }
                 });
             });
-            $('#menu').append(menuMuestra); 
         });
     }
     

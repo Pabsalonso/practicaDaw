@@ -1,6 +1,6 @@
-<!DOCTYPE html lang="es">
+<!DOCTYPE html>
 
-<html>
+<html lang="es">
 
 <head>
     <title>La casa de la πzza</title>
@@ -26,48 +26,41 @@
     <link rel="stylesheet" href="./css/index.css">
 </head>
 
-<body>
-
-     <div class='container-fluid'>
-
+<body class="d-flex flex-column h-100">
         <!-- Header -->
-        <header>
-            <div class="row">
-                <div class="col-2 d-xs-none">
-                    <!-- Logo -->
-                    <a href="./index.html">
-                        <img src="./images/logo.png" class="logo img-responsive w-100" alt="logo">
-                    </a>
-                </div>
-                <div class="col-10 col-xs-12 responsive-texts d-flex justify-content-center align-items-center">
-                    <!-- Name web -->
-                    <a href="./index.html" class="header-logo-name">
-                        <h1>La casa de la πzza</h1>
-                    </a>
-                </div>
+    <header class="row">
+            <div class="d-none d-md-block col-md-1 offset-md-1">
+                <!-- Logo -->
+                <a href="./index.html">
+                    <img src="./images/logo.png" class="logo img-responsive w-100" alt="logo">
+                </a>
             </div>
-        </header>
+            <div class="col-xs-12 col-md-10 responsive-texts d-flex justify-content-center align-items-center">
+                <!-- Name web -->
+                <a href="./index.html" class="header-logo-name">
+                    <h1>La casa de la πzza</h1>
+                </a>
+            </div>
+    </header>
 
         <!-- nav -->
-        <nav class="topNav">
-            <div class="row">
-                <div class="col">
-                    <ul class="nav nav-fills justify-content-start">
-                        <li class="nav-item"><a href="./index.html">Home</a></li>
-                        <li class="nav-item"><a href="./menu.html">Carta</a></li>
-                        <li class="nav-item"><a href="./offers.html">Menús y Ofertas</a></li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <ul class="nav justify-content-end">
-                        <li class="nav-item"><a href="./cart.html">Cesta</a></li>
-                        <li class="nav-item"><a href="./logUp.html">Registrarse</a></li>
-                        <li class="nav-item"><a href="./logIn.html">Iniciar sesión</a></li>
-                    </ul>
-                </div>
+    <div class="row">
+        <nav class="navbar navbar-expand-lg navbar-custom sticky-top container-fluid">
+            <!--<div class="collapse navbar-collapse" > con esta etiqueta hacer que se colapse en un boton-->     
+            <div class="navbar-nav">
+                <a class="nav-item nav-link " href="./index.html">Home</a>
+                <a class="nav-item nav-link" href="./menu.html">Carta</a>
+                <a class="nav-item nav-link" href="./offers.html">Menús y Ofertas</a>
             </div>
-        </nav>
+            <div class="navbar-nav ml-auto">
+                <a id="cesta" class="nav-item nav-link" href="./cart.html">Cesta</a>
+                <a id="registrarse" class="nav-item nav-link" href="./signUp.html">Registrarse</a>
+                <a id="iniciaSesion" class="nav-item nav-link" href="./logIn.html">Iniciar sesión</a>
+                <a id="miCuenta" class="nav-item nav-link active" href="./account.html">Mi Cuenta</a>
+            </div>         
 
+        </nav>
+    </div>
         <!-- Contenido. -->
         <main>
             <div class="main-container">
@@ -137,7 +130,7 @@
         <footer>
             <p>Grupo DAW 2020</p>
         </footer>
-    </div>
+    </body>
 
     <!-- Bootstrap-->
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
@@ -147,6 +140,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
         crossorigin="anonymous"></script>
+
+    <script src="./JS/jquery.session.js" ></script>
+    <script src="./JS/sessionCheck.js"></script>
 </body>
 
 </html>

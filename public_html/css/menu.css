@@ -1,10 +1,11 @@
 .menu-section {
+    margin-top: 1vw;
+    margin-bottom: 1vw;
     background-color: #87431D;
-    margin: 0.5em;
     padding: 0.5em;
 }
 .menu-section img{
-    padding-top: 1vw;
+    padding: 1vw;
 }
 
 .menu-content {
@@ -24,16 +25,17 @@
     background-color: #C87941;
 
     text-align: center;
-    padding: 0.4em;
-    margin: 0.4em;
+    padding: 1vw;
+    margin: 1vw;
 
-    border: 1px solid black;
-    border-radius: 5px;
+    border: 0.1vw solid black;
+    border-radius: 1vw;
 }
 .product-name{
     background-color: #DF6C1B;
     text-align: center;
-    border: 1px solid black;
+    border:0.2vw solid black;
+    margin-top: 1vw;
 }
 
 .menu-more {
