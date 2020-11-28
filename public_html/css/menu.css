@@ -1,11 +1,19 @@
 .menu-section {
     margin-top: 1vw;
     margin-bottom: 1vw;
-    background-color: #87431D;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    background-color: rgba(0, 0, 0, 0.8);
     padding: 0.5em;
 }
-.menu-section img{
-    padding: 1vw;
+
+.menu-section h3 {
+    text-transform: uppercase;
+    color: rgb(161, 124, 68);
+}
+
+.menu-section h2 {
+    color: rgb(0, 0, 0);
 }
 
 .menu-content {
@@ -16,39 +24,40 @@
 }
 
 .menu-section-title{
-    background-color: #C87941;
-
     margin: 0.4em;
 }
 
 .menu-product {
-    background-color: #C87941;
+    background-color: #721d15;
 
     text-align: center;
     padding: 1vw;
     margin: 1vw;
 
-    border: 0.1vw solid black;
+    border: 1px solid black;
     border-radius: 1vw;
-}
-.product-name{
-    background-color: #DF6C1B;
-    text-align: center;
-    border:0.2vw solid black;
-    margin-top: 1vw;
 }
 
 .menu-more {
-    background-color: #E27629;
+    background-color: #dd771d;
     padding: 0.3em;
     margin:0.1em;
 
     border: 1px solid black;
     border-radius: 5px;
+}
+
+.menu-more:hover {
+    background-color: #e26f0a;
+}
+
+a.menu-more, 
+a.menu-add{
+    color: black !important;
 }
 
 .menu-add {
-    background-color: #E3670E;
+    background-color: #a5351d;
     padding: 0.3em;
     margin:0.1em;
 
@@ -56,9 +65,23 @@
     border-radius: 5px;
 }
 
+.menu-add:hover {
+    background-color: #bd2e0f;
+}
+
 .menu-product img {
-    margin-bottom: 1em;
-    width: 100%;
+    margin-bottom: 1vw;
+    width: 15vw;
+    height: 10vw;
+}
+
+.menu-product figure {
+    margin: 0;
+}
+
+.title-page {
+    color: #000000;
+    font-style: italic;
 }
 
 @media only screen and (max-width: 780px) {

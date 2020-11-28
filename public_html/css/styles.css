@@ -3,8 +3,6 @@ html,body{
     height: 100%;
 }
 
-
-
 .container {
     font-family: Arial, Helvetica, sans-serif;
     background-color: black;
@@ -17,6 +15,10 @@ header {
     /*background-color: #3C3C3C;*/
 }
 
+.navbar {
+    margin: 0;
+    padding: 2vw;
+}
 
 .logo {
     margin-top:1.5vw;
@@ -29,15 +31,15 @@ header {
 
 header h1 {
     font-family: 'Dancing Script', cursive;
-    
     text-align: center;
 }
+
 header a:hover{
    color:whitesmoke; 
 }
 
 header a{
-    font-weight;
+    
     color: #080808;
     text-decoration: none !important;
 }
@@ -54,17 +56,25 @@ header a{
 
 /*Clases de fuentes adaptativa*/
 .responsive-texts{
-    font-size:1.5vw;
+    font-size: 1.4vw;
 }
 .responsive-texts h1{
-    font-size: 4vw;
+    font-size: 6vw;
 }
 .responsive-texts h2{
-    font-size: 3vw;
+    font-size: 4vw;
+}
+
+.responsive-texts h3{
+    font-size: 2vw;
+}
+
+.responsive-texts h4{
+    font-size: 1.8vw;
 }
 
 footer .responsive-texts{
-    font-size: 1vw;
+    font-size: 2vw;
 }
 
 /* Main */
