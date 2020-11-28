@@ -31,7 +31,8 @@ $(document).ready(function(){
 
     
     function loadProduct(){
-        var idURL =getUrlParameter('productid');
+        var idURL = getUrlParameter('productid');
+        var productTypeURL =getUrlParameter('product-type');
         $.getJSON("./JS/datosMenu.json",function (menu){
 
             $.each(menu,function(key,value){       //bucle que itera por el json
@@ -40,10 +41,25 @@ $(document).ready(function(){
                 
                 $.each(this, function(foodType, values){    //bucle que itera por los arrays
                     if(parseInt(this['id'],10) === parseInt(idURL,10)){
+                        // Imagen del producto
+                        document.getElementById("img-product").src = './images/menu/'+key+'/' + this['file']; 
+                        document.getElementById("img-product").alt = '" alt="Imagen de ' + this['nombre'];
+                        //document.getElementById("img-product").width = '';
+                        //document.getElementById("img-product").height = '';
+                        
+
+                        
+                        // Título de la página
                         var element=document.getElementById("tituloPage");
                         element.innerHTML=this['nombre']+" - Informacion de producto";
+
+                        // Título del producto
                         element =document.getElementById("tituloProducto");
                         element.innerHTML=this['nombre'];
+
+                        // Ingedientes
+                        element =document.getElementById("ingredientesProducto");
+                        element.innerHTML=this['ingredientes'];
                         
                         element =document.getElementById("descripcionProducto");
                         element.innerHTML=this['descripcion'];
