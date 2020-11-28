@@ -1,11 +1,19 @@
 .my-account-nav{
-    background-color: #DF6C1B;
+    background-color: #009246;
     text-align: center;
-    border:0.2vw solid black;
+    border-right:0.1vw solid black;
+}
+
+.my-account-nav a{
+    color:black;
+    font-size: 1vw;
+    display: inline-block;
 }
 
 .my-data{
-   background-color: #DF6C1B;
-    text-align: center;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    background-color: rgba(206,43,55,0.95);
     border:0.2vw solid black; 
 }
+

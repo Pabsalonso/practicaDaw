@@ -11,7 +11,7 @@ function checkEmailValidity() {
     if (inputEmail.patternMismatch) {
         inputReEmail.setCustomValidity("Por favor, introduce un email válido (p.e. abc3@email.com)");
     }
-    if (inputEmail.value != inputReEmail.value) {
+    if (inputEmail.value !== inputReEmail.value) {
         inputReEmail.setCustomValidity("¡Los correos no coinciden!");
     } else {
         inputReEmail.setCustomValidity("");
@@ -21,14 +21,14 @@ function checkEmailValidity() {
 var pass_regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])([A-Za-z\d$@$!%*?&]|[^ ]){8,32}$/;
 
 function checkPasswordValidity() {
-    if (pass_regex.test(inputPass.value) != true) {
+    if (pass_regex.test(inputPass.value) !== true) {
         inputPass.setCustomValidity("Complejidad insuficiente: Entre 8-32 caracteres. Al menos una letra mayúscula. "
             + "Al menos una letra minúscula. Al menos un dígito. No espacios en blanco. Al menos un caracter especial. ");
     } else {
         inputPass.setCustomValidity("");
     }
 
-    if (inputRePass.value != inputPass.value) {
+    if (inputRePass.value !== inputPass.value) {
         inputRePass.setCustomValidity("¡Las contraseñas no coinciden!");
     } else {
         inputRePass.setCustomValidity("");

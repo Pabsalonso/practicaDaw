@@ -1,25 +1,25 @@
 {       
         "User": [
             {
-                "logged":false,
                 "id":1,
                 "nick":"admin",
                 "passwd":"adm",
                 "nombre":"Elje",
                 "apellido":"fazo",
+                "telefono": 928365878,
                 "domicilio":"Casa de la pizza HQ",
                 "correo":"correodejefazo@gmail.com",
                 "carrito":[]
             },
             {
-                "logged":false,
                 "id":2,
                 "nick":"Palonso",
                 "passwd":"1234",
                 "nombre":"Pablo",
                 "apellido":"Alonso",
+                "telefono": 928365878,
                 "domicilio":"Mi casa",
-                "correo":"pabloalonocorreo@gmail.com",
+                "correo":"pabloalonsocorreo@gmail.com",
                 "carrito":[]
             }
         ]
