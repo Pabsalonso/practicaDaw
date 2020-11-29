@@ -22,7 +22,7 @@ Segundo sprint del proyecto de la asignatura Diseño de Aplicaciones Web I
 
     Para llevar a cabo la validación hemos utilizado JavaScript y la característica introducida a partir de HTML5 conocida como **constraint validation** que utiliza atributos como `min`, `max`, `step`, `pattern`, `required`, `maxlength` y `type` para determinar la validez de formularios cuando estos son enviados.
 
-* Uso de **JavaScript**, **jQuery **y **JSON **para **añadir contenido de manera dinámica** al aplicativo web. 
+* Uso de **JavaScript**, **jQuery** y **JSON** para **añadir contenido de manera dinámica** al aplicativo web. 
 
     * Manipulación de ficheros JSON usando jQuery.
     * Manipulación del DOM usando JavaScript.
