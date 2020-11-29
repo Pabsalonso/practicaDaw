@@ -38,7 +38,6 @@ header a:hover{
 }
 
 header a{
-    
     color: #080808;
     text-decoration: none !important;
 }
@@ -51,33 +50,33 @@ header a{
 }
 .navbar-custom a{
     color:whitesmoke;
-    font-size:1.5vw;
+    font-size:2vh;
 }
 
 
 /*Clases de fuentes adaptativa*/
 .responsive-texts{
-    font-size: 1.4vw;
+    font-size: 1.8vh;
 }
 .responsive-texts h1{
-    font-size: 6vw;
+    font-size: 7vh;
 }
 .responsive-texts h2{
-    font-size: 4vw;
+    font-size: 5vh;
 }
 
 .responsive-texts h3{
-    font-size: 2vw;
+    font-size: 3vh;
 }
 
 .responsive-texts h4{
-    font-size: 1.8vw;
+    font-size: 2.8vh;
   
     text-align: center;
 }
 
 footer .responsive-texts{
-    font-size: 2vw;
+    font-size: 2vh;
 }
 
 /* Main */

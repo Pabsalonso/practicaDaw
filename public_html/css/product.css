@@ -1,0 +1,92 @@
+.product-section {
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 0.5em;
+}
+
+.menu-content {
+    margin: 1em 0 1em 0;
+    padding: 1em 0 1em 0;
+
+    text-align: center;
+}
+
+.menu-section-title{
+    margin: 0.4em;
+}
+
+.menu-product {
+    background-color: #721d15;
+
+    text-align: center;
+    padding: 1vw;
+    margin: 1vw;
+
+    border: 1px solid black;
+    border-radius: 1vw;
+}
+
+#tituloProducto {
+    text-align: center;
+    color: blanchedalmond;
+}
+
+.description-section,
+.ingredients-section,
+#img-product,
+#priceProduct,
+.amountAdd{
+    background-color: #721d15;
+    color: black;
+
+    text-align: center;
+    padding: 1vw;
+    margin: 1vw;
+
+    border: 1px solid black;
+    border-radius: 1vw;
+
+    font-weight: bold;
+}
+
+#priceProduct{
+    font-size: 3vh;
+}
+
+.ingredients-section{
+    text-align: justify !important;
+    font-size: 2vh;
+}
+
+.form-button {
+    padding: 1em !important;
+    background-color: #8d5316 !important;
+    color:black !important;
+    font-weight: bold !important;
+    border: 2px black solid !important;
+}
+
+.form-button:hover {
+    background-color: #683703 !important;
+}
+
+.form-control {
+    background-color: #a2b3a3 !important;
+}
+
+/* Recomendaciones */
+.recommendation-section {
+    margin: 2em 0 2em 0;
+    padding: 2em 0 2em 0;
+
+    text-align: center;
+}
+
+.recommendation-product img {
+    margin-bottom: 1vw;
+    width: 15vh;
+    height: 10vh;
+}
