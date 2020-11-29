@@ -26,27 +26,27 @@ $(document).ready(function(){
 
         $.getJSON("./JS/datosMenu.json",function (menu){
 
-            $.each(menu,function(key,value){       //bucle que itera por el json
-                if(menu[key].length===0) //como comprobar que esta vacio
-                return;
-                menuMuestra += '<div id="content" class=' + 
-                        '"row justify-content-center menu-section">' +
-                        '<div class="col-xs-12 col-sm-12 col-md-12 menu-section-title"> <h3>' +
-                        key+ 
-                        '</h3> </div>'; 
-
+            // Bucle que itera por el json
+            $.each(menu,function(key,value){       
+                // Como comprobar que esta vacio
+                if(menu[key].length===0) 
+                    return;
+                
+                menuMuestra += '<div class="row justify-content-center menu-section">';
+                menuMuestra += '<div class="col-xs-12 col-sm-12 col-md-12 responsive-texts menu-section-title"><h3>' + key + '</h3></div>';
 
                 $.each(this, function(foodType, values){    //bucle que itera por los arrays
+                    menuMuestra += '<div col-xs-12 col-sm-6 col-md-2 item">';
                     menuMuestra += 
-                                '<div class="col-xs-12 col-sm-6 col-md-3 item">'+
-                                '<div class="menu-product">' +
-                                '<h4 id="nombre">' + this['nombre']+ '</h4>' +
-                                '<img src="./images/carta/' +  'horizontal_pizza.jpg" alt="">' +//Aqui cambiar el nombre de la`pizza en la ruta a this[nombre].jpg
-                                '<a href="./product.html?productid=' + this['id'] + '" class="menu-more">Ver</a>' + //y aqui seria añadir el link a la pagina de articulo
-                                '<a href="" class="menu-add">Añadir</a>'+    
-                                '</div> </div>';
+                                '<div class="menu-product responsive-texts">' +
+                                '<h4>' + this['nombre']+ '</h4>' +
+                                '<figure><img src="./images/menu/'+key+'/' + this['file'] + '" alt="Imagen de ' + this['nombre'] + '" width="355" height="240"></figure>' +//Aqui cambiar el nombre de la pizza en la ruta a this[nombre].jpg
+                                '<a href="./product.html?productid=' + this['id'] + "&product-type=" + key + '" class="menu-more responsive-texts">Ver</a>' + //y aqui seria añadir el link a la pagina de articulo
+                                '<a href="" class="menu-add responsive-texts">Añadir</a>'+    
+                                '</div>';
+                    menuMuestra += '</div>';
                 });
-                menuMuestra+= '</div>';
+                menuMuestra += '</div>';
             });
             $('#menu').append(menuMuestra); 
         });

@@ -1,82 +1,174 @@
 {
-        "Nuestras Recomendaciones":[
+        "nuestras recomendaciones":[
             {
-                "id":4,
+                "id":"01",
                 "nombre":"Pizza Margarita",
-                "ingredientes":"prueba",
-                "descripcion":"Prueba de texto",
-                "Precio":15
+                "file":"1-pizza-margarita.jpg",
+                "ingredientes":"Preparado LÁCTEO (29%) (agua, grasa vegetal de palma, proteína de LECHE, almidón modificado, MOZZARELLA (LECHE), sal, suero LÁCTEO (LECHE), acidulantes (E-330 y E-331), estabilizantes (E-340, E-407, E-417 y E-452), aroma (LACTOSA), colorante (E-160a (iii)), conservador (E-202) y antiaglomerante (almidón)), harina de TRIGO, agua, tomate (13%) (tomate y corrector de acidez (E-330)), masa madre (7, 5%) (harina de TRIGO, agua y sal), aceite de girasol, sal, levadura, azúcar, orégano y pimienta.",
+                "descripcion":"Típica pizza napolitana para todos los gustos que no dejará ningún paladar indiferente. Ideal para condimentar a tu gusto.",
+                "Precio":"10.00"
+            },{
+                "id":"02",
+                "nombre":"Vino",
+                "file":"2-bebida-vino.jpg",
+                "ingredientes":"",
+                "descripcion":"",
+                "Precio":"19.00"
+            },
+            {
+                "id":"03",
+                "nombre":"Papas fritas",
+                "file":"3-complementos-papas.jpg",
+                "ingredientes":"",
+                "descripcion":"",
+                "Precio":"2.00"
             }
         ],
     
     
-        "Pizzas": [
+        "pizzas": [
             {
-                "id":1,
+                "id":"01",
+                "nombre":"Pizza 4 Formaggi",
+                "file":"1-pizza-queso.jpg",
+                "ingredientes":"Pizza 4 formaggi (Tomate, mozzarella y mixto de 4 quesos)",
+                "descripcion":"",
+                "Precio":"15.00"
+            },
+            {
+                "id":"02",
+                "nombre":"Pizza Insalata",
+                "file":"2-pizza-rucula.jpg",
+                "ingredientes":"Tomate, mozzarella, tomate cherry, rucula, queso parmesano, rallado.",
+                "descripcion":"",
+                "Precio":"13.20"
+            },
+            {
+                "id":"03",
+                "nombre":"Pizza Emiliana",
+                "file":"3-pizza-bacon.jpg",
+                "ingredientes":"Tomate, mozzarella, champiñones, bacon, parmesano rallado.",
+                "descripcion":"",
+                "Precio":"15.00"
+            },
+            {
+                "id":"04",
+                "nombre":"Pizza Pugliese",
+                "file":"4-pizza-cebolla.jpg",
+                "ingredientes":"Tomate, mozzarella, cebolla, parmesano rallado.",
+                "descripcion":"",
+                "Precio":"15.00"
+            },
+            {
+                "id":"05",
                 "nombre":"Pizza Margarita",
-                "ingredientes":"prueba",
-                "descripcion":"Prueba de texto",
-                "Precio":15
+                "file":"5-pizza-margarita.jpg",
+                "ingredientes":"Preparado LÁCTEO (29%) (agua, grasa vegetal de palma, proteína de LECHE, almidón modificado, MOZZARELLA (LECHE), sal, suero LÁCTEO (LECHE), acidulantes (E-330 y E-331), estabilizantes (E-340, E-407, E-417 y E-452), aroma (LACTOSA), colorante (E-160a (iii)), conservador (E-202) y antiaglomerante (almidón)), harina de TRIGO, agua, tomate (13%) (tomate y corrector de acidez (E-330)), masa madre (7, 5%) (harina de TRIGO, agua y sal), aceite de girasol, sal, levadura, azúcar, orégano y pimienta.",
+                "descripcion":"Típica pizza napolitana para todos los gustos que no dejará ningún paladar indiferente. Ideal para condimentar a tu gusto.",
+                "Precio":"10.00"
             },
             {
-                "id":2,
-                "nombre":"Pizza carbonara",
-                "ingredientes":"prueba",
-                "descripcion":"Prueba de texto",
-                "Precio":13.2
-            },
-            {
-                "id":3,
-                "nombre":"Pizza Barbacoa",
-                "ingredientes":"prueba",
-                "descripcion":"Prueba de texto",
-                "Precio":15
-            },
-            {
-                "id":4,
-                "nombre":"Pizza Napolitana",
-                "ingredientes":"prueba",
-                "descripcion":"Prueba de texto",
-                "Precio":15
-            },
-            {
-                "id":5,
-                "nombre":"Pizza Hawaiana",
-                "ingredientes":"prueba",
-                "descripcion":"Prueba de texto",
-                "Precio":15
-            },
-            {
-                "id":6,
-                "nombre":"Pizza 4 Quesos",
-                "ingredientes":"prueba",
-                "descripcion":"Prueba de texto",
-                "Precio":15
-            },
-            {
-                "id":7,
+                "id":"06",
                 "nombre":"Pizza Diavola",
-                "ingredientes":"prueba",
-                "descripcion":"Prueba de texto",
-                "Precio":15
+                "file":"6-pizza-diavola.jpg",
+                "ingredientes":"Tomate, Mozzarella, Salami y Picante.",
+                "descripcion":"",
+                "Precio":"12.00"
             }
         ],
         
         "hamburguesas": [
             {
-                "id":8,
-                "nombre":"La tejana",
-                "ingredientes":"prueba",
-                "descripcion":"Prueba de texto"
+                "id":"21",
+                "nombre":"Hamburguesa pollo",
+                "file":"1-hamburguesa-pollo.jpg",
+                "ingredientes":"",
+                "descripcion":"Pechuga de pollo marinada durante 12 horas, bien hecha a la parrilla.",
+                "Precio":"4.50"
             },
             {
-                "id":9,
-                "nombre":"CHeeseburger",
-                "ingredientes":"prueba",
-                "descripcion":"Prueba de texto"
+                "id":"22",
+                "nombre":"Hamburguesa vegana",
+                "file":"2-hamburguesa-vegana.jpg",
+                "ingredientes":"Garbanzo, espinaca, maíz cocido, pimiento rojo, pan rallado, sal, pimienta negra molida y pimentón ahumado de la vera.",
+                "descripcion":"Burger crujiente de garbanzos y espinacas. Con aguacate y chutney de tomate.  Sin mayonesa.",
+                "Precio":"5.00"
+            },
+            {
+                "id":"23",
+                "nombre":"Hamburguesa barbacoa",
+                "file":"3-hamburguesa-barbacoa.jpg",
+                "ingredientes":"Ternera a la parrilla con bacon ahumado, queso Manchego, Cheddar, nuestros pepinillos caseros y mostaza artesana.",
+                "descripcion":"",
+                "Precio":"3.90"
             }
         ],
-        "Bebidas":[
-               
+        "bebidas":[
+            {
+                "id":"31",
+                "nombre":"Fanta",
+                "file":"1-bebida-fanta.jpg",
+                "ingredientes":"",
+                "descripcion":"",
+                "Precio":"3.00"
+            },
+            {
+                "id":"32",
+                "nombre":"Cerveza",
+                "file":"2-bebida-cerveza.jpg",
+                "ingredientes":"",
+                "descripcion":"",
+                "Precio":"2.00"
+            },
+            {
+                "id":"33",
+                "nombre":"Lambrusco",
+                "file":"3-bebida-lambrusco.jpg",
+                "ingredientes":"",
+                "descripcion":"",
+                "Precio":"5.00"
+            },
+            {
+                "id":"34",
+                "nombre":"Cola-Coca",
+                "file":"4-bebida-coca.jpg",
+                "ingredientes":"",
+                "descripcion":"",
+                "Precio":"2.00"
+            },{
+                "id":"35",
+                "nombre":"Vino",
+                "file":"5-bebida-vino.jpg",
+                "ingredientes":"",
+                "descripcion":"",
+                "Precio":"19.00"
+            }
+        ],
+            "complementos":[
+                {
+                    "id":"41",
+                    "nombre":"Papas fritas",
+                    "file":"1-complementos-papas.jpg",
+                    "ingredientes":"",
+                    "descripcion":"",
+                    "Precio":"2.00"
+                },
+                {
+                    "id":"42",
+                    "nombre":"Aceitunas rellenas",
+                    "file":"2-complementos-aceitunas.jpg",
+                    "ingredientes":"",
+                    "descripcion":"Aceitunas verdes rellenas de carne picada y rebozadas.",
+                    "Precio":"3.00"
+                },
+                {
+                    "id":"43",
+                    "nombre":"Bolas de Arroz rebozado",
+                    "file":"3-complementos-bola.jpg",
+                    "ingredientes":"",
+                    "descripcion":"Rellenas de tomate y mozzarella.",
+                    "Precio":"4.00"
+                }
+
         ]
 }
