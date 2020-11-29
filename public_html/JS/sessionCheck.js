@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    var freq=1000;
+    var freq=100;
     
     function startAjaxCalls(){
         setTimeout(function(){

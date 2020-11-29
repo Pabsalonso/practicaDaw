@@ -5,12 +5,14 @@
 
 
 .container-login{
-    background-color: #C87941;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 0.5em;
+}
 
-    text-align: center;
-    padding: 1vw;
-    margin: 1vw;
-
-    border: 0.1vw solid black;
-    border-radius: 1vw;
+.container-login h2,p,label{
+    color: whitesmoke;
 }

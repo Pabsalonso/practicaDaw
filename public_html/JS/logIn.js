@@ -17,7 +17,6 @@ $(document).ready(function(){
                         $.session.set('id',data.User[key]['id']);
                         return false;
                     }
-                    //luego cambiar la interfaz y todo. Crear script que detecte si hay sesion iniciada
                 }
             }); //end loop over users
             //aqui alertar de que no ha funcionado

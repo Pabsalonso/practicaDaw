@@ -9,20 +9,7 @@ $(document).ready(function(){
    
     $('#infoCuenta').click(function(){
         muestraMainInfo();
-//        $.getJSON("./JS/datosUsers.json",function (data){
-//            var idCliente=$.session.get('id');
-//            $.each(data.User,function(key,value){
-//                if(parseInt(idCliente)=== parseInt(data.User[key]['id'])){
-//                    alert("funciono");
-//                    
-//                    document.getElementById("bienvenidoCliente").innerHTML = "Bienvenido, " + data.User[key]['nombre'];
-//                    $("#input-edit-email").attr("value",data.User[key]['email']);
-//
-//                    return false;
-//                }
-//            });
-//            
-//        });
+
     });//fin boton infocuenta
     
     function checkEmailValidity() {

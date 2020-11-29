@@ -59,25 +59,25 @@
         </div>
         
             <!-- Contenido. -->
-        <main class="row mt-auto h-100">
+        <main class="container-fluid h-100">
             <!--imagen de fondo-->
             
             <div class="bg"></div>
             <!--Navegacion cuenta-->
-            
-            <div class="col-sm-3  offset-sm-0 align-items-center my-account-nav">
-                <nav class="navbar navbar-nav">
-                    <div class="navbar-nav">
-                        <a class="nav-item nav-link " id="infoCuenta" href="#">Información Personal</a>
-                        <a class="nav-item nav-link " id="infoPago" href="#">Información de Pago</a>
-                        <a class="nav-item nav-link " id="infoDirecciones" href="#">Direcciones de entrega</a>
-                        <a class="nav-item nav-link " id="historial" href="#">Historial de pedidos</a>
-                    </div>
-                </nav>
-            </div>
+            <div class="row align-items-center">
+                <div class="col-sm-3  offset-sm-0 align-items-center my-account-nav">
+                    <nav class="navbar navbar-nav">
+                        <div class="navbar-nav">
+                            <a class="nav-item nav-link " id="infoCuenta" href="#">Información Personal</a>
+                            <a class="nav-item nav-link " id="infoPago" href="#">Información de Pago</a>
+                            <a class="nav-item nav-link " id="infoDirecciones" href="#">Direcciones de entrega</a>
+                            <a class="nav-item nav-link " id="historial" href="#">Historial de pedidos</a>
+                        </div>
+                    </nav>
+                </div>
             <div class="col-sm-7 offset-sm-1">
                 <div class="col-12 my-data">    
-                    <div class="col-12 responsive-texts ">
+                    <div class="row justify-content-center responsive-texts ">
                         <h2 id="bienvenidoCliente"></h2>
                     </div>
                     <div class="col-12 ht-auto ">
@@ -110,10 +110,14 @@
                                             value="" 
                                             required
                                             ><br>
-                        <input type="button" value="Editar">
+                        <input id="modifyData" type="button" value="Editar" class="my-account-button">
                     </div>
                 </div>
-                <button id="cierraSesion" class="col-12 responsive-texts">Cerrar sesión</button>
+                <div class="row justify-content-center">
+                    <button id="cierraSesion" class="col-12 responsive-texts 
+                            my-account-button">Cerrar sesión</button>
+                </div>
+                </div>
             </div>
 
         </main>
