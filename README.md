@@ -25,7 +25,7 @@ Segundo sprint del proyecto de la asignatura Diseño de Aplicaciones Web I
 * Uso de **JavaScript**, **jQuery **y **JSON **para **añadir contenido de manera dinámica** al aplicativo web. 
 
     * Manipulación de ficheros JSON usando jQuery.
-* Manipulación del DOM usando JavaScript.
+    * Manipulación del DOM usando JavaScript.
 
 ## Enlaces
 
