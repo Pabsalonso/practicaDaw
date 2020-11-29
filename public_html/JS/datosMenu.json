@@ -9,10 +9,10 @@
                 "precio":"10.00"
             },{
                 "id":"02",
-                "nombre":"Vino",
+                "nombre":"Vino - [Vim]no",
                 "file":"2-bebida-vino.jpg",
-                "ingredientes":"",
-                "descripcion":"",
+                "ingredientes":"De color rojo cereza con ribete púrpura.<br>Nariz intensa y franca dominada por aromas a fruta roja y negra, perfectamente combinados con notas especiadas y ligeramente tostadas.<br>En boca se muestra frutal, fresco y con buena estructura. De paso goloso y equilibrado y taninos suaves y agradables.",
+                "descripcion":"Nacido del coupage de diferentes parcelas, plantadas con cepas de tempranillo de más de 25 años de edad, [Vim]no Roble 2018 muestra todo el potencial de la variedad reina de la Ribera del Duero, enriquecida tras un paso de 6 meses por roble francés y americano y afinada en botella durante otros 6 meses más.",
                 "precio":"19.00"
             },
             {
@@ -29,7 +29,7 @@
         "pizzas": [
             {
                 "id":"01",
-                "nombre":"Pizza 4 Formaggi",
+                "nombre":"πzza 4 Formaggi",
                 "file":"1-pizza-queso.jpg",
                 "ingredientes":"Pizza 4 formaggi (Tomate, mozzarella y mixto de 4 quesos)",
                 "descripcion":"",
@@ -37,7 +37,7 @@
             },
             {
                 "id":"02",
-                "nombre":"Pizza Insalata",
+                "nombre":"πzza Insalata",
                 "file":"2-pizza-rucula.jpg",
                 "ingredientes":"Tomate, mozzarella, tomate cherry, rucula, queso parmesano, rallado.",
                 "descripcion":"",
@@ -45,7 +45,7 @@
             },
             {
                 "id":"03",
-                "nombre":"Pizza Emiliana",
+                "nombre":"πzza Emiliana",
                 "file":"3-pizza-bacon.jpg",
                 "ingredientes":"Tomate, mozzarella, champiñones, bacon, parmesano rallado.",
                 "descripcion":"",
@@ -53,7 +53,7 @@
             },
             {
                 "id":"04",
-                "nombre":"Pizza Pugliese",
+                "nombre":"πzza Pugliese",
                 "file":"4-pizza-cebolla.jpg",
                 "ingredientes":"Tomate, mozzarella, cebolla, parmesano rallado.",
                 "descripcion":"",
@@ -61,7 +61,7 @@
             },
             {
                 "id":"05",
-                "nombre":"Pizza Margarita",
+                "nombre":"πzza Margarita",
                 "file":"5-pizza-margarita.jpg",
                 "ingredientes":"Preparado LÁCTEO (29%) (agua, grasa vegetal de palma, proteína de LECHE, almidón modificado, MOZZARELLA (LECHE), sal, suero LÁCTEO (LECHE), acidulantes (E-330 y E-331), estabilizantes (E-340, E-407, E-417 y E-452), aroma (LACTOSA), colorante (E-160a (iii)), conservador (E-202) y antiaglomerante (almidón)), harina de TRIGO, agua, tomate (13%) (tomate y corrector de acidez (E-330)), masa madre (7, 5%) (harina de TRIGO, agua y sal), aceite de girasol, sal, levadura, azúcar, orégano y pimienta.",
                 "descripcion":"Típica pizza napolitana para todos los gustos que no dejará ningún paladar indiferente. Ideal para condimentar a tu gusto.",
@@ -69,7 +69,7 @@
             },
             {
                 "id":"06",
-                "nombre":"Pizza Diavola",
+                "nombre":"πzza Diavola",
                 "file":"6-pizza-diavola.jpg",
                 "ingredientes":"Tomate, Mozzarella, Salami y Picante.",
                 "descripcion":"",
@@ -137,10 +137,10 @@
                 "precio":"2.00"
             },{
                 "id":"35",
-                "nombre":"Vino",
+                "nombre":"Vino - [Vim]no",
+                "ingredientes":"De color rojo cereza con ribete púrpura.<br>Nariz intensa y franca dominada por aromas a fruta roja y negra, perfectamente combinados con notas especiadas y ligeramente tostadas.<br>En boca se muestra frutal, fresco y con buena estructura. De paso goloso y equilibrado y taninos suaves y agradables.",
+                "descripcion":"Nacido del coupage de diferentes parcelas, plantadas con cepas de tempranillo de más de 25 años de edad, [Vim]no Roble 2018 muestra todo el potencial de la variedad reina de la Ribera del Duero, enriquecida tras un paso de 6 meses por roble francés y americano y afinada en botella durante otros 6 meses más.",                
                 "file":"5-bebida-vino.jpg",
-                "ingredientes":"",
-                "descripcion":"",
                 "precio":"19.00"
             }
         ],

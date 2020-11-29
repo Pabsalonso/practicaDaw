@@ -1,8 +1,6 @@
-# Práctica DAW 1 - Sprint 1 
+# Práctica DAW 1 - Sprint 2
 
-
-
-Primer sprint del proyecto de la asignatura Diseño de Aplicaciones Web I
+Segundo sprint del proyecto de la asignatura Diseño de Aplicaciones Web I
 
 **Grupo**: G6
 
@@ -14,15 +12,64 @@ Primer sprint del proyecto de la asignatura Diseño de Aplicaciones Web I
 
 
 
+## Objetivos Sprint 2
+
+* Añadir **_Responsible Design_** a las páginas del aplicativo web para permitir que se adaptan a los diferentes tamaños de pantalla.
+
+    Para llevar a cabo el diseño adaptable hemos utilizado:
+
+    * Bootstrap framework.
+    * TO-DO
+
+* Validación formularios web en el lado del cliente.
+
+    Para llevar a cabo la validación hemos utilizado:
+
+    * TO-DO
+
+* Uso de jQuery y JSON para añadir contenido de manera dinámica al aplicativo web. 
+
+    Para llevar a cabo la carga dinámica hemos utilizado:
+
+    * TO-DO
+
+
+
+Además hemos rediseñado el aplicativo web partiendo del trabajo realizado en el primer Sprint. 
+
+
+
+## Enlaces
+
+* Repositorio **Github**: https://github.com/Pabsalonso/practicaDaw
+* Tablero Kanban (**Trello**): https://trello.com/b/EuROSxDL/sprint-2
+* Mockups (**Figma**): https://www.figma.com/file/jy4h8vl3Wap1ccHt2h3xgC/Sprint1-G6 
+
+
+
+---
+
+
+
+# Práctica DAW 1 - Sprint 1 
+
+Primer sprint del proyecto de la asignatura Diseño de Aplicaciones Web I
+
+**Grupo**: G6
+
+**Alumnos**:
+
+* Alberto Corredera Romero
+* Pablo Alonso Galván
+* Francisco Javier López-Dufour Morales
+
 ## Aplicativo Web: La casa de la πzza
-
-
 
 ### Enlaces
 
-* Repositorio Github: https://github.com/Pabsalonso/practicaDaw-sprint-1
-* Tablero Kanban (Trello): https://trello.com/b/cVmlaun7/sprint-1
-* Mockups (Figma): https://www.figma.com/file/jy4h8vl3Wap1ccHt2h3xgC/Sprint1-G6 
+* Repositorio Github: ~~https://github.com/Pabsalonso/practicaDaw-sprint-1~~
+* Tablero Kanban (Trello): ~~https://trello.com/b/cVmlaun7/sprint-1~~
+* Mockups (Figma): ~~https://www.figma.com/file/jy4h8vl3Wap1ccHt2h3xgC/Sprint1-G6~~
 
 
 
