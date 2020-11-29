@@ -80,7 +80,7 @@
                     <div class="row justify-content-center responsive-texts ">
                         <h2 id="bienvenidoCliente"></h2>
                     </div>
-                    <div class="col-12 ht-auto ">
+                    <form class="col-12 ht-auto " id="formularioEditInfo">
                         <p id="correo">Correo:</p>
                         <input  id="input-edit-email" 
                                             class="form-control" 
@@ -89,29 +89,29 @@
                                             required
                                             pattern="\w{1,}@\w{1,}\.\w{1,}\s*"
                                             oninput="checkEmailValidity()"><br>
-                        <p id="correo">Nombre:</p>
+                        <p>Nombre:</p>
                         <input  id="input-edit-name" 
                                             class="form-control" 
                                             type="text"
                                             value="" 
                                             required
-                                            pattern="\w{1,}@\w{1,}\.\w{1,}\s*"><br>
-                        <p id="correo">Apellidos</p>
+                                            ><br>
+                        <p>Apellidos</p>
                         <input  id="input-edit-surname" 
                                             class="form-control" 
                                             type="text"
                                             value="" 
                                             required
                                             ><br>
-                        <p id="correo">Telefono</p>
+                        <p>Telefono</p>
                         <input  id="input-edit-phone" 
                                             class="form-control" 
                                             type="text"
                                             value="" 
                                             required
                                             ><br>
-                        <input id="modifyData" type="button" value="Editar" class="my-account-button">
-                    </div>
+                        <button id="modifyData" type="submit" class="my-account-button">Editar</button>
+                    </form>
                 </div>
                 <div class="row justify-content-center">
                     <button id="cierraSesion" class="col-12 responsive-texts 

@@ -2,18 +2,18 @@
     padding: 4em;
 }
 
-h2{
-    font-size: 3em !important;
-    font-weight: bold !important;
-}
-
-h3{
-    font-weight: bold !important;
-}
-
 .form-content {
     text-align: center;
-    background-color: #C87941;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 0.5em;
+}
+
+.form-content h2,h3,p,label{
+    color: whitesmoke;
 }
 
 .form-group{
@@ -21,15 +21,11 @@ h3{
 }
 
 .form-control {
-    background-color: #fdb36e !important;
+    background-color: window !important;
 }
 
 input:hover{
-    background-color: #e6964c !important;
-}
-
-.form-button {
-    width: 60%;
+    background-color: #6897bb !important;
 }
 
 .row-button{
@@ -37,15 +33,17 @@ input:hover{
 }
 
 .form-button {
+    width: 60%;
     padding: 1em !important;
-    background-color: #E3670E !important;
+    background-color: #b6fcd5 !important;
     color:black !important;
     font-weight: bold !important;
-    border: 2px black solid !important;
+    border: 0.2vw black solid !important;
+    font-size: 1.5vw !important;
 }
 
 .form-button:hover {
-    background-color: #f86700 !important;
+    background-color: #6897bb !important;
 }
 
 .terms-cond {
@@ -54,17 +52,6 @@ input:hover{
     padding: 1em 0 0.4em 0;
 }
 
-/* input:invalid {
-    border: 2px dashed red !important;
-  }
-  
-  input:valid {
-    border: 2px solid rgb(19, 233, 0) !important;
-  }
-  
-  input:focus:invalid {
-    border: black !important;
-  } */
 
 @media only screen and (max-width: 750px) {
     .logUp-content {

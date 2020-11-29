@@ -12,6 +12,30 @@ $(document).ready(function(){
 
     });//fin boton infocuenta
     
+    $(document).on('submit', '#formularioLogin', function() {
+        checkEmailValidity();
+        $.getJSON("./JS/datosUsers.json",function (data){
+            var idCliente=$.session.get('id');
+            var form = $('#formularioEditInfo').serializeArray();
+
+            $.each(data.User,function(key,value){
+                if(parseInt(idCliente)=== parseInt(data.User[key]['id'])){
+                    data.User[key]['correo'] = form[0]['value'];
+                    data.User[key]['nombre'] = form[1]['value'];
+                    data.User[key]['apellido'] = form[2]['value'];
+                    data.User[key]['telefono'] = form[3]['value'];
+                    return false;
+                }
+            });
+            var newData = JSON.stringify(data);
+            jQuery.post('./JS/datosUsers.json', {
+                newData: newData
+            }, function(response){
+                // response could contain the url of the newly saved file
+            });
+        });
+    });
+    
     function checkEmailValidity() {
         var inputEmail = document.getElementById("input-edit-email");
         if (inputEmail.patternMismatch) {
