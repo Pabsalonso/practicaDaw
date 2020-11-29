@@ -16,69 +16,73 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
 
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/index.css">
     <!-- Bootstrap-->
-    <!--CSS-->
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     
-        <!-- CSS -->
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/index.css">
+
 </head>
 
 <body class="d-flex flex-column h-100">
         <!-- Header -->
-    <header class="row">
-            <div class="d-none d-md-block col-md-1 offset-md-1">
-                <!-- Logo -->
-                <a href="./index.html">
-                    <img src="./images/logo.png" class="logo img-responsive w-100" alt="logo">
-                </a>
-            </div>
-            <div class="col-xs-12 col-md-10 responsive-texts d-flex justify-content-center align-items-center">
-                <!-- Name web -->
-                <a href="./index.html" class="header-logo-name">
-                    <h1>La casa de la πzza</h1>
-                </a>
-            </div>
-    </header>
+        <header class="row">
+                <div class="d-none d-md-block col-md-1 offset-md-1">
+                    <!-- Logo -->
+                    <a href="./index.html">
+                        <img src="./images/logo.png" class="logo img-responsive w-100" alt="logo">
+                    </a>
+                </div>
+                <div class="col-xs-12 col-md-10 responsive-texts d-flex justify-content-center align-items-center">
+                    <!-- Name web -->
+                    <a href="./index.html" class="header-logo-name">
+                        <h1>La casa de la πzza</h1>
+                    </a>
+                </div>
+        </header>
 
         <!-- nav -->
-    <div class="row">
-        <nav class="navbar navbar-expand-lg navbar-custom sticky-top container-fluid">
-            <!--<div class="collapse navbar-collapse" > con esta etiqueta hacer que se colapse en un boton-->     
-            <div class="navbar-nav">
-                <a class="nav-item nav-link " href="./index.html">Home</a>
-                <a class="nav-item nav-link" href="./menu.html">Carta</a>
-                <a class="nav-item nav-link" href="./offers.html">Menús y Ofertas</a>
+        <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-custom sticky-top container-fluid">
+                <!--<div class="collapse navbar-collapse" > con esta etiqueta hacer que se colapse en un boton-->     
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="./index.html">Home</a>
+                    <a class="nav-item nav-link" href="./menu.html">Carta</a>
+                    <a class="nav-item nav-link" href="./offers.html">Menús y Ofertas</a>
+                </div>
+                <div class="navbar-nav ml-auto">
+                    <a id="cesta" class="nav-item nav-link" href="./cart.html">Cesta</a>
+                    <a id="registrarse" class="nav-item nav-link" href="./signUp.html">Registrarse</a>
+                    <a id="iniciaSesion" class="nav-item nav-link" href="./logIn.html">Iniciar sesión</a>
+                    <a id="miCuenta" class="nav-item nav-link active" href="./account.html">Mi Cuenta</a>
+                </div>         
+                
+            </nav>
+        </div>
+        
+            <!-- Contenido. -->
+        <main class="container-fluid">
+            <!--imagen de fondo-->
+            <div class="bg"></div>
+            
+            <!-- Banner de la oferta -->
+            <div class="row justify-content-center">
+                <div class="col-xs-12 col-md-10  align-self-center responsive-texts">
+                    <h2>¡Producto destacado!</h2>
+                    <img src="./images/carta/pizza_grande_horizontal.jpg" 
+                         alt="Carta_oferta" class="img-responsive w-100" />
+                    <p></p>
+                </div>
             </div>
-            <div class="navbar-nav ml-auto">
-                <a id="cesta" class="nav-item nav-link" href="./cart.html">Cesta</a>
-                <a id="registrarse" class="nav-item nav-link" href="./signUp.html">Registrarse</a>
-                <a id="iniciaSesion" class="nav-item nav-link" href="./logIn.html">Iniciar sesión</a>
-                <a id="miCuenta" class="nav-item nav-link active" href="./account.html">Mi Cuenta</a>
-            </div>         
-
-        </nav>
-    </div>
-        <!-- Contenido. -->
-        <main>
-            <div class="main-container">
-                <div class="bg"></div>
-
-                <!-- Banner de la oferta -->
-                <article class="featured-offer">
-                    <h2>¡Promoción destacada temporal!</h2>
-                    <figure>
-                        <img src="./images/carta/pizza_grande_horizontal.jpg" alt="Carta_oferta" class="responsive" />
-                    </figure>
-                </article>
-
-                <!-- Menú con las opciones principales de nuestro sitio -->
-                <article class="main-menu">
-                    <!-- Nuestra carta-->
-                    <section class="section-menu">
-                        <h3>Nuestra Carta</h3>
+            
+            <!-- Menú con las opciones principales de nuestro sitio -->
+            <div class="row justify-content-between responsive-texts">
+            <!-- Nuestra carta-->
+                <section class="col-4 offset-md-1">
+                    <h3>Nuestra Carta</h3>
                         <figure>
                             <img src="./images/carta/carta.jpg" alt="NuestraCarta-img" width="140" height="140" />
                         </figure>
@@ -86,10 +90,10 @@
                             <p>Echa un ojo a nuestra carta, tenemos una seleccion de las mejores
                                 pizzas de la ciudad, y para todos los gustos.<br> [<a href="./menu.html">Ver más</a>]</p>
                         </div>
-                    </section>
+                </section>
 
                     <!-- Menús y Ofertas -->
-                    <section class="section-menu">
+                <section class="col-4 offset-md-1">
                         <h3>Menús y Ofertas</h3>
                         <figure>
                             <img src="./images/carta/oferta.jpg" alt="ofertas-img" width="140" height="140" />
@@ -98,53 +102,56 @@
                             <p>Ahorra dinero en articulos seleccionados, o elige un menú
                                 completo para ti o para compartir.<br> [<a href="./offers.html">Ver más</a>]</p>
                         </div>
-                    </section>
-
-                    <!-- Entrga a domicilio -->
-                    <section class="section-menu">
-                        <h3>Entrega a Domicilio</h3>
-                        <figure>
-                            <img src="./images/carta/pizza-box.jpg" alt="Take Away-img" width="140" height="140" />
-                        </figure>
-                        <div class="text-menu">
-                            <p>Con nuestro servicio a domicilio, podras pedir lo que quieras a donde quieras,
-                                solo inicia sesión y dinos donde te encuentras. [<a href="#">Ver más</a>]</p>
-                        </div>
-                    </section>
-
-                    <!-- Nuestros restaurantes -->
-                    <section class="section-menu">
-                        <h3>Nuestros Restaurantes</h3>
-                        <figure>
-                            <img src="./images/otros/gps.jpg" alt="Restaurantes-img" width="140" height="140" />
-                        </figure>
-                        <div class="text-menu">
-                            <p>Consulta nuestros restaurantes y horarios. Inicia sesión para
-                                poder realizar reservas en tu restaurante más cercano.<br> [<a href="./hour_locations.html">Ver más</a>]</p>
-                        </div>
-                    </section>
-                </article>
+                </section>
+            
             </div>
+            
+            <div class="row justify-content-between responsive-texts">
+                <!-- Entrga a domicilio -->
+                <section class="col-4 offset-md-1">
+                    <h3>Entrega a Domicilio</h3>
+                    <figure>
+                        <img src="./images/carta/pizza-box.jpg" alt="Take Away-img" width="140" height="140" />
+                    </figure>
+                    <div>
+                        <p>Con nuestro servicio a domicilio, podras pedir lo que quieras a donde quieras,
+                            solo inicia sesión y dinos donde te encuentras. [<a href="#">Ver más</a>]</p>
+                    </div>
+                </section>
 
+                <!-- Nuestros restaurantes -->
+                <section class="col-4 offset-md-1">
+                    <h3>Nuestros Restaurantes</h3>
+                    <figure>
+                        <img src="./images/otros/gps.jpg" alt="Restaurantes-img" width="140" height="140" />
+                    </figure>
+                    <div class="text-menu">
+                        <p>Consulta nuestros restaurantes y horarios. Inicia sesión para
+                            poder realizar reservas en tu restaurante más cercano.<br> [<a href="./hour_locations.html">Ver más</a>]</p>
+                    </div>
+                </section>
+            </div>
         </main>
 
         <!-- Footer -->
-        <footer>
-            <p>Grupo DAW 2020</p>
+        <footer class="row page-footer mt-auto">
+            <div class= "col-12 responsive-texts">
+                Grupo DAW 2020
+            </div>
         </footer>
+
+    <!-- Bootstrap y jquery-->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+            crossorigin="anonymous"></script>
+
+    <!--Nuestros scripts-->
+        <script src="./JS/jquery.session.js" ></script>
+        <script src="./JS/sessionCheck.js"></script>
+    
     </body>
-
-    <!-- Bootstrap-->
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-        crossorigin="anonymous"></script>
-
-    <script src="./JS/jquery.session.js" ></script>
-    <script src="./JS/sessionCheck.js"></script>
-</body>
 
 </html>
