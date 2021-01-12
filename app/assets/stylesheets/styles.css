@@ -1,0 +1,182 @@
+/* Body */
+html,body{
+    overflow-x: hidden;
+    height: 100%;
+}
+
+.container {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+header {
+    grid-area: header;
+    background-image: linear-gradient(#3C3C3C, #586E75);
+    /*background-color: #3C3C3C;*/
+}
+
+.navbar {
+    margin: 0;
+    padding: 2vw;
+}
+
+.logo {
+    margin-top:1.5vw;
+    margin-bottom:1.5vw;
+}
+
+.header-logo-name {
+    background-color:transparent;
+}
+
+header h1 {
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+}
+
+header a:hover{
+   color:whitesmoke; 
+}
+
+header a{
+    color: #080808;
+    text-decoration: none !important;
+}
+
+.navbar-custom{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    background-color: #333333;
+    
+}
+.navbar-custom a{
+    color:whitesmoke;
+    font-size:2vh;
+}
+
+
+/*Clases de fuentes adaptativa*/
+.responsive-texts{
+    font-size: 1.8vh;
+}
+.responsive-texts h1{
+    font-size: 7vh;
+}
+.responsive-texts h2{
+    font-size: 5vh;
+}
+
+.responsive-texts h3{
+    font-size: 3vh;
+}
+
+.responsive-texts h4{
+    font-size: 2.8vh;
+  
+    text-align: center;
+}
+
+footer .responsive-texts{
+    font-size: 2vh;
+}
+
+footer a{
+    color: blanchedalmond;
+}
+
+footer a:hover{
+    color: crimson;
+}
+
+.group-name{
+    font-family: Consolas;
+}
+
+/* Main */
+main {
+    background-color: whitesmoke;
+    grid-area: main;
+    position: relative;
+    z-index: 1;
+}
+
+main .bg{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url(carta/pizza_grande.jpg);
+    opacity: .7;
+    width: 100%;
+    height: 100%;
+}
+
+.group-name{
+
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #04030f;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    border: 0.1vw solid gray;
+    
+}
+
+@media only screen and (max-width: 550px) {
+    
+    .container {
+        min-width: 360px;
+        
+        grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 0.5fr;
+        grid-template-rows: auto 0.5fr auto 3fr;
+        grid-template-areas:
+            "header header header header header header"
+            "nav nav nav nav nav nav"
+            "main main main main main main"
+            "footer footer footer footer footer footer ";
+        grid-gap: 0.1rem;
+    
+    }
+    
+    header .header-logo-name {
+        text-align: center;
+    }
+    
+    header .logo {
+        display:none;
+    }
+       
+    /* nav */
+
+    .topNav a{
+        float: left;
+        color: black;
+        text-decoration: none;
+        
+        width: 100%;
+        margin:0;
+    }
+    
+    .topNav .rightLink {
+        display: flex;
+        flex-direction: column;
+            
+        padding: 0;
+        margin: 0;
+        
+        width: 50%;
+    }
+
+    .topNav li {
+        border-radius: 0px;
+    }
+    
+    .topNav li a {
+        padding: 0;
+    }
+}
