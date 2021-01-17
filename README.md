@@ -20,11 +20,11 @@
 * Tablero Kanban (**Trello**): https://trello.com/b/0HVFA2zm/sprint-3
 * Mockups (**Figma**): https://www.figma.com/file/1UGICNYUV99Y6sTSCFdL7B/Mockups
 
+---
+
 # Práctica DAW 1 - Sprint 2
 
 Segundo sprint del proyecto de la asignatura Diseño de Aplicaciones Web I
-
----
 
 ## Objetivos Sprint 2
 
