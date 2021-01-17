@@ -24,6 +24,8 @@
 
 Segundo sprint del proyecto de la asignatura Diseño de Aplicaciones Web I
 
+---
+
 ## Objetivos Sprint 2
 
 * **Responsive Web Design**. Añadir **_Responsible Design_** a las páginas del aplicativo web para permitir que se adaptan a los diferentes tamaños de pantalla.
