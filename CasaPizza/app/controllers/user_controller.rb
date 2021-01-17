@@ -22,13 +22,25 @@ class UserController < ApplicationController
 		@user=User.find(session[:current_user_id])
 	end
 
+	def update
+		@user=User.find(session[:current_user_id])
+		if @user.update(user_params)
+			redirect_to :action =>'show'
+		else
+			render :action =>'edit'
+		end
+	end
+
+	def access
+	end
+
 	def signIn
-		@user = User.find_by(username: params[:nick])
-		if @user && @user.authenticate(params[:password])
-		    sessions[:current_user_id] = @user.id
-		    	redirect_to :action => 'show'   
-			else
-			    render :ation => 'signIn'   
+		@user = User.find_by(nick: params[:nick])
+		if @user && @user[:passwd] == params[:passwd]
+		    session[:current_user_id] = @user.id
+		    redirect_to :action => 'show'   
+		else
+			render :action => 'access'   
 		end
 	end
 

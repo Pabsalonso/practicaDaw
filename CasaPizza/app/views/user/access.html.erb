@@ -68,27 +68,26 @@
 
         <div class="bg"></div>
 
-        <form id="formularioLogin" class="container-login" action="">
+        <%= form_tag '/user/signIn' do %>
+        <div class="col align-self-center container-login responsive-texts">
             <div class="col align-self-center inicioSesion responsive-texts">
-                <label for="uname"><b>Usuario</b></label>
-                <input type="text" class="form-control input-lg" placeholder="Enter Username" name="uname" required>
+                <label for="uname" class="responsive-texts"><b>Usuario</b></label>
+                <%= text_field_tag :nick, :required, :class => "form-control input-lg", :value =>"Usuario"%>
             </div>
 
             <div class="col align-self-center inicioSesion responsive-texts">
-                <label for="psw"><b>Contraseña</b></label>
-                <input type="password" class="form-control" placeholder="Enter Password" name="psw" required>
-            </div>
+                <label for="psw"  class="responsive-texts"><b>Contraseña</b></label>
+                <%= password_field_tag :passwd, :required, :class => "form-control input-lg", :value =>"Contraseña"%>
+<!--                 <input type="password" class="form-control" placeholder="Enter Password" name="psw" required>
+ -->            </div>
 
             <div class="col align-self-center inicioSesion responsive-texts ht-auto">
-                <button id="botonLogin" type="submit" class="botonLogin">Iniciar Sesión</button>
-            </div>
-        </form>
-
-        <div id="bienvenido" class="row">
-            <div class="col align-self-center container-login responsive-texts">
-                <h2 id="bienvenidoCliente"></h2>
+                <!-- <button id="botonLogin" type="submit" class="botonLogin">Iniciar Sesión</button> -->
+                <%= submit_tag "Login",class:"botonLogin col-12 responsive-texts "%>
+                <%end-%>
             </div>
         </div>
+
     </main>
 
     <!-- Footer -->
@@ -116,11 +115,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
         crossorigin="anonymous"></script>
-
-    <script src="./JS/jquery.session.js"></script>
-    <script src="./JS/sessionCheck.js"></script>
-    <script src="./JS/logIn.js"></script>
-
-</body>
+    </body>
 
 </html>

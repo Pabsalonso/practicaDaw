@@ -18,6 +18,14 @@
         "/packs/js/index-fefd3527e7c408e7c1f9.js.map"
       ]
     },
+    "miCuenta": {
+      "js": [
+        "/packs/js/miCuenta-5ecf4167a53b77749c14.js"
+      ],
+      "js.map": [
+        "/packs/js/miCuenta-5ecf4167a53b77749c14.js.map"
+      ]
+    },
     "signUp": {
       "js": [
         "/packs/js/signUp-96d3fc8ff6d065d6c012.js"
@@ -29,6 +37,8 @@
   },
   "index.js": "/packs/js/index-fefd3527e7c408e7c1f9.js",
   "index.js.map": "/packs/js/index-fefd3527e7c408e7c1f9.js.map",
+  "miCuenta.js": "/packs/js/miCuenta-5ecf4167a53b77749c14.js",
+  "miCuenta.js.map": "/packs/js/miCuenta-5ecf4167a53b77749c14.js.map",
   "signUp.js": "/packs/js/signUp-96d3fc8ff6d065d6c012.js",
   "signUp.js.map": "/packs/js/signUp-96d3fc8ff6d065d6c012.js.map"
 }

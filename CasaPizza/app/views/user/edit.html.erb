@@ -27,7 +27,8 @@
 
     <!-- Add icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+    <%= javascript_pack_tag 'miCuenta', 'data-turbolinks-track': 'reload' %>
+
 </head>
 
 <body class="d-flex flex-column h-100">
@@ -72,41 +73,51 @@
 
         <div class="bg"></div>
         <!--Navegacion cuenta-->
-        <div class="row align-items-center mt-auto h-100">
-            <div class="col-sm-6 offset-sm-3 my-data">
-                
+        <div class="row align-items-center">
+            <div class="col-sm-6 offset-sm-3">
+                <div class="col-12 my-data">
                     <div class="row justify-content-center responsive-texts ">
                         <h2 id="bienvenidoCliente"> Bienvenido, <%= @user.nick %> </h2>
                     </div>
                     <div class="row justify-content-center responsive-texts ">
                         <h3 class="responsive-texts"> Tu información personal: </h3>
                     </div>
-                    <div class="row justify-content-center responsive-texts ">
-                        <p>Correo: <%= @user.email %> </p>
-                    </div>
-                    <div class="row justify-content-center responsive-texts ">
-                        <p>Nombre: <%= @user.name %></p>
-                    </div>
-                    <div class="row justify-content-center responsive-texts ">
-                        <p>Apellidos:  <%= @user.srname %> </p>
-                    </div>
-                    <div class="row justify-content-center responsive-texts ">
-                        <p>Telefono: <%= @user.phone %></p>
-                    </div>
-                    <div class="row justify-content-center responsive-texts ">
-                        <p>Direccion: <%= @user.adress %></p>
-                    </div>
-                    <div class="row justify-content-between responsive-texts ">
-                        <div class="col-3">
-                            <%= button_to "Editar", { :action => "edit" }, :method => :get, :class => "col-12 responsive-texts 
-                                my-account-button" %>
-                        </div>
-                        
-                        <div class="col-3">
-                            <%= button_to "Cerrar sesión", { :action => "signOff" }, :method => :get, :class => "col-12 responsive-texts 
-                                        my-account-button" %>
-                        </div>
-                    </div>
+                    <%=form_for @user, url: user_update_path, html: { method: :post } do |form| %>
+                    <p>Correo:</p>
+                    <%= form.text_field :email, required: true, class:"form-control" ,value:@user.email, pattern:"[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" %>
+                    <p>Nombre:</p>
+                    <%= form.text_field :name, required: true, class:"form-control" ,value:@user.name %>
+                    <p>Apellidos:</p>
+                    <%= form.text_field :srname, required: true, class:"form-control" ,value:@user.srname %>
+                    <p>Telefono:</p>
+                    <%= form.text_field :phone, required: true, class:"form-control" ,value:@user.phone %>
+                    <p>Direccion:</p>
+                    <%= form.text_field :adress, required: true, class:"form-control" ,value:@user.adress %>
+                    
+
+                    <%=submit_tag "Editar", class:"my-account-button"%>
+
+                    <%= button_to "Cancelar", { :action => "show" }, :method => :get, :class => "col-12 responsive-texts 
+                            my-account-button" %>
+
+                    <!-- <button class="my-account-button">
+                        <%=link_to 'Editar',{:action =>'edit'}%>
+                    </button> -->
+                    <!--<form class="col-12 ht-auto " id="formularioEditInfo">
+                        <p id="correo">Correo:</p>
+                        <input id="input-edit-email" class="form-control" type="text" value="" required
+                            pattern="\w{1,}@\w{1,}\.\w{1,}\s*" oninput="checkEmailValidity()"><br>
+                        <p>Nombre:</p>
+                        <input id="input-edit-name" class="form-control" type="text" value="" required><br>
+                        <p>Apellidos</p>
+                        <input id="input-edit-surname" class="form-control" type="text" value="" required><br>
+                        <p>Telefono</p>
+                        <input id="input-edit-phone" class="form-control" type="text" value="" required><br>
+                        <button id="modifyData" type="submit" class="my-account-button">Editar</button>
+                    </form>
+                    -->
+                    <%end-%>
+                </div>
             </div>
         </div>
 

@@ -8,6 +8,10 @@ html,body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.adjust-vertical{
+	overflow-y:scroll;
+}
+
 /* Header */
 header {
     grid-area: header;
