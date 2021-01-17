@@ -15,7 +15,7 @@ class Users < ActiveRecord::Migration[6.1]
 	end
 
   def self.down
-  	drop_table :books
+  	drop_table :users
   end
 
 end

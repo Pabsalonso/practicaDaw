@@ -21,4 +21,5 @@
 # usuario.each do |usuarios|
 # 	User.create(usuarios)
 # end
+producto= Product.create([name: 'Pizza Margarita',logo:"",ingredients: "test", description: "test",price: 52,category_id:1])
 

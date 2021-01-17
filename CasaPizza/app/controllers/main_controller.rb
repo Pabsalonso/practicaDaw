@@ -1,7 +1,7 @@
 class MainController < ApplicationController
 	def index
 		current_user = User.find_by_id(session[:current_user_id])
-		flash[:alert] = current_user
+		@recomended=Product.find_by(category_id: rand(1..5))
 	end
 	def carta
 	end
