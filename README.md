@@ -1,6 +1,4 @@
-# Práctica DAW 1 - Sprint 2
-
-Segundo sprint del proyecto de la asignatura Diseño de Aplicaciones Web I
+# Práctica DAW 1 - Sprint 3
 
 **Grupo**: G6
 
@@ -10,7 +8,21 @@ Segundo sprint del proyecto de la asignatura Diseño de Aplicaciones Web I
 * Pablo Alonso Galván
 * Francisco Javier López-Dufour Morales
 
+## Objetivos Sprint 3
 
+* Arquitecturas MVC para desarrollo web 
+* Ruby on Rails
+* Active Record
+
+## Enlaces
+
+* Repositorio **Github**: https://github.com/Pabsalonso/practicaDaw
+* Tablero Kanban (**Trello**): https://trello.com/b/0HVFA2zm/sprint-3
+* Mockups (**Figma**): https://www.figma.com/file/1UGICNYUV99Y6sTSCFdL7B/Mockups
+
+# Práctica DAW 1 - Sprint 2
+
+Segundo sprint del proyecto de la asignatura Diseño de Aplicaciones Web I
 
 ## Objetivos Sprint 2
 
